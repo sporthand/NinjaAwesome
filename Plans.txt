@@ -1,0 +1,137 @@
+CodeCane:
+
+1: Ninja Awesome
+
+- art:
+  -	chibi style: checked!
+  
+  
+- story 
+  - against the robot domination of the world.
+  - ninja fight against robots.
+  
+- story line:
+  - daydreame move into virtual/future reality. 
+  - young techsavvy
+    - your suit, weapon, items: 
+	  - will explain the item you pick up
+	    ex) "oh you found "power supply" you can use for comibining weapon.
+		
+		
+  - goofy grand master.
+	- teach you how to use weapon
+	- teach how to fight the specific enemies
+	
+  = communication between each characters
+  
+  - enemies: 
+    - big boss: ex-girlfriend or ex-boyfriend.
+    - 1st boss: 
+  
+  
+Game Description:
+  - playing style
+  - single player
+  - two or three players coop
+  - player vs player
+  
+- weapons with all three combo:
+
+  - kunai knife
+	- thorwing kunai knife at 3rd combo swing
+  - katana
+  - spears
+	- less damange, he can't move during the thurst of spears
+  - mace
+	- longer and more damange but slower swing.
+  - glaive
+	- longer and more damange but slower swing.
+  - arrow
+	- long range but little damange
+  
+- clothing:
+  - hat:
+	- ninja mask + 3 stealth
+	- cap + 3 agility
+	- cowboyhat +3 range damange attack
+  - face
+	- hockey mask +3 health (loot) but lower percentage
+    - welding mask +5 health (loot) but lower percentage
+	
+  - pants
+	- black
+	- blue
+	- green
+	- violet
+	- pink
+	- brown
+	- purlple
+	- yellow
+	- red
+	
+  - magnatic suit:
+    - weapon return when a player do range attack.
+	
+<ability>
+  - clocking
+  - more health
+  - more speed
+  - walk over water
+  - dodge
+  - special moves for each weapons
+  - user can equip 5 specials:
+    - down-arrow + speical button
+	- up-arrow + special button
+	- left-arrow+special button
+	- right-arrow+ special button
+	- special button
+	
+<Usuable Items>
+  - can equip three usuable item
+    - healing items
+    - recover mana
+    - perk
+	  - 2X damage
+	  - invincibility
+	    - costing cool down.
+		
+		
+		
+control buttons:
+- joypads
+  - move left, right, up, and down
+  - double tap on left or right joypads: ninja can move quick.
+  
+  - double tap down: 
+    - substitution
+	
+  - double tap up:
+     
+ 
+Item:
+- as Level of Item is increasing
+  - the item is harder to loot
+  - or user can purchase item.
+  
+- Some item require the component to upgrade or crafted.
+- After user crafted item, the item can be 
+  - upgraded
+  - destoryed
+  - no effected
+  
+Shop:
+If level 4 player looks for level 5 item
+- she or he must wait for level 5 player to sell at shop.
+- selling and buying transition suppose to cost 10 percent.
+
+- if user does not have fake money to buy item, user can convert real money into fake money 
+  - based on currency value.
+  
+ 
+  
+ 
+Background Music:
+  - Depend on Player, so player derived a music file from his computer
+  - and play his own music file.
+  
+  

@@ -27,7 +27,7 @@ public class Boss extends GameObj implements Hostile {
 	
 	
 	
-	// added for new datafield for boss.
+	// added for new data field for boss.
 	private int imageNumber =1;
 	private double imageWidth = 0.0;
 	private double imageHeight = 0.0;
@@ -83,14 +83,14 @@ public class Boss extends GameObj implements Hostile {
 				//yLoc = 450; // y
 				this.setDirection("up");
 				System.out.println("Boss " + direction +"\n");
-				yLoc -= xSpeed; // x
-				if (yLoc >= 250 && direction.equals(("up"))) {// x
+				yLoc -= this.getxSpeed(); // x
+				if (yLoc >= 250 && (this.getDirection()).equals(("up"))) {// x
 					this.setxSpeed(2);
-					direction = "up";
+					this.setDirection("up");
 				}
-				else if (yLoc <= 100 && direction.equals("up")) { // x
+				else if (yLoc <= 100 && (this.getDirection()).equals("up")) { // x
 					this.setxSpeed(-2);
-					direction ="down";
+					this.setDirection("down");
 				}
 			}
 
@@ -218,5 +218,8 @@ public class Boss extends GameObj implements Hostile {
 	
 	public void setDirection(String direction){
 		this.direction = direction;
+	}
+	public String getDirection(){
+		return this.direction;
 	}
 }
