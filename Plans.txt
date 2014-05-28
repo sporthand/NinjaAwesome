@@ -34,12 +34,14 @@ Game Description:
   - single player
   - two or three players coop
   - player vs player
+  - rush mode
   
 - weapons with all three combo:
 
   - kunai knife
-	- thorwing kunai knife at 3rd combo swing
+	- thorwing kunai knife at 3rd combo swing or can be choosen by skill set.
   - katana
+	- two handed sword better range then two swords but as oppose to spears has less range.
   - spears
 	- less damange, he can't move during the thurst of spears
   - mace
@@ -48,6 +50,18 @@ Game Description:
 	- longer and more damange but slower swing.
   - arrow
 	- long range but little damange
+  - two swords 
+	-uses two swords but less range as oppose to the katana/long katana.
+
+-weapon combo advance:
+	-Each player can choose a 1 of the 2 skills tress that makes up the last 3 combo after combo number 4.
+	-example: 4th combo can be unlocked after level 20, 5th combo level 40, 6th combo can be unlocked after level 60
+
+-special moves:
+	- Each player gets to equip a total of 5 specials moves at once ranging from elements. 
+	- Each speical has 4 levels where a player can put points into the specials to make them evolve and make them stronger.
+	
+	
   
 - clothing:
   - hat:
@@ -94,6 +108,10 @@ Game Description:
 	  - 2X damage
 	  - invincibility
 	    - costing cool down.
+
+<Gear fusion> 
+	- Each gear has a stats points and some gears have a set bonus for looks. 
+	- Gears can be fused where you can change the look of the item and stats to be able to get both the set bonus and the stats you want.
 		
 		
 		
@@ -126,6 +144,9 @@ If level 4 player looks for level 5 item
 
 - if user does not have fake money to buy item, user can convert real money into fake money 
   - based on currency value.
+
+<trade> 
+ Players can trade items to others without a percentage. 
   
  
   
