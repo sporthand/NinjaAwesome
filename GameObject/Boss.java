@@ -24,18 +24,18 @@ public class Boss extends GameObj implements Hostile {
 	private int xSpeed = 2;
 	private int ticks = 0;
 	private int timer = 0;
-	
-	
-	
+	private boolean isJumpDown = false;
+	private int levelOfStage = 0; // Boss suppose to be changed depend on each
+									// level.
+
 	// added for new data field for boss.
-	private int imageNumber =1;
+	private int imageNumber = 1;
 	private double imageWidth = 0.0;
 	private double imageHeight = 0.0;
-	
 
-	private String direction = "down"; // I make a boss to move aroud easier! New Source Code Attention!
-	
-	
+	private String direction = "down"; // I make a boss to move aroud easier!
+										// New Source Code Attention!
+
 	Animation explosion, anim;
 	Random r = new Random();
 	Sound boom;
@@ -51,7 +51,8 @@ public class Boss extends GameObj implements Hostile {
 		image = s.getBoss();
 		e = s.getExplosion2();
 		boom = new Sound("/resources/snd_explosion2.wav");
-		explosion = new Animation(5, image, imageWidth, imageHeight, imageNumber);
+		explosion = new Animation(5, image, imageWidth, imageHeight,
+				imageNumber);
 	}
 
 	public void update() {
@@ -77,22 +78,29 @@ public class Boss extends GameObj implements Hostile {
 		}
 
 		if (!isDead) {
-			if (yLoc < 450 && direction.equals("down"))
+			if (!isJumpDown){
 				yLoc += speed;// y
-			else if (yLoc >= 450) {// y
-				//yLoc = 450; // y
-				this.setDirection("up");
-				System.out.println("Boss " + direction +"\n");
-				yLoc -= this.getxSpeed(); // x
-				if (yLoc >= 250 && (this.getDirection()).equals(("up"))) {// x
-					this.setxSpeed(2);
+				if (yLoc >= 450) {
+					isJumpDown = true;
 					this.setDirection("up");
-				}
-				else if (yLoc <= 100 && (this.getDirection()).equals("up")) { // x
-					this.setxSpeed(-2);
-					this.setDirection("down");
+					
 				}
 			}
+			else if (direction.equals("up")) {
+				this.setxSpeed(-1);
+				if (yLoc <=250)
+					this.setDirection("down");
+
+			} else if (direction.equals("down")) {
+				//System.out.println("Boss " + direction + "\n");
+				this.setxSpeed(1);
+				
+				if (yLoc >= 300) {// x
+					this.setDirection("up");
+				}
+
+			}
+			yLoc += this.getxSpeed();
 
 			// SHOOTING AI
 			if (ticks % 40 == 0) {
@@ -164,11 +172,11 @@ public class Boss extends GameObj implements Hostile {
 
 			g.drawImage(image, xLoc, yLoc, null);
 		} else if (isDead) {
-			//explosion.drawAnimation(g, xLoc + 20, yLoc, 0);
-			//explosion.drawAnimation(g, xLoc + 52, yLoc, 0);
-			//explosion.drawAnimation(g, xLoc + 84, yLoc, 0);
-			//explosion.drawAnimation(g, xLoc + 30, yLoc + 40, 0);
-			//explosion.drawAnimation(g, xLoc + 72, yLoc + 40, 0);
+			// explosion.drawAnimation(g, xLoc + 20, yLoc, 0);
+			// explosion.drawAnimation(g, xLoc + 52, yLoc, 0);
+			// explosion.drawAnimation(g, xLoc + 84, yLoc, 0);
+			// explosion.drawAnimation(g, xLoc + 30, yLoc + 40, 0);
+			// explosion.drawAnimation(g, xLoc + 72, yLoc + 40, 0);
 		}
 	}
 
@@ -215,11 +223,12 @@ public class Boss extends GameObj implements Hostile {
 	public void setTimer(int n) {
 		timer = n;
 	}
-	
-	public void setDirection(String direction){
+
+	public void setDirection(String direction) {
 		this.direction = direction;
 	}
-	public String getDirection(){
+
+	public String getDirection() {
 		return this.direction;
 	}
 }

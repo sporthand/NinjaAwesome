@@ -178,7 +178,12 @@ public class Sprites {
 		return explosion2;
 	}
 
+	/*
+	 * Boss suppose to be different depending on each level.
+	 * The tip of implementation of programming  is
+	 * public BufferedImage[] getEnemySprite()*/
 	public BufferedImage getBoss() {
 		return boss;
+		
 	}
 }
