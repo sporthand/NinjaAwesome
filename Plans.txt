@@ -26,8 +26,16 @@ CodeCane:
   
   - enemies: 
     - big boss: ex-girlfriend or ex-boyfriend.
-    - 1st boss: 
-  
+    -phantom robot that has a cloak and uses a sword
+    - 1st boss: jet pack.
+    - first robot and the most common one. 
+
+
+Ninja stats points:
+Attack stats: Increases the damage for physical and special attacks.
+Defense stats: Increases the defense for ninja's and health
+Speed stats:  Increaes the speed of doing an attack and movement.
+Luck stats: chances of increasing crit hits and damage for attacks. (math needs to be worked out to see how much luck = a chance of crital damage)
   
 Game Description:
   - playing style
@@ -39,19 +47,21 @@ Game Description:
 - weapons with all three combo:
 
   - kunai knife
-	- thorwing kunai knife at 3rd combo swing or can be choosen by skill set.
+	- using a kunai knife as a close range weapon and a long range weapon
   - katana
-	- two handed sword better range then two swords but as oppose to spears has less range.
+	- two handed sword, better range then two swords but as oppose to spears has less range.
+        - 3 combo moves
+	- skill tree moves. 
+	combo 4: User can choose between a thrust dash attack or hammer strike where the ninja jumps up and dives at the enemy.
+	combo 5: User can choose between a quick slash with less range or throwing the're sword at the enemy. 
+	combo 6: User can chosoe between a downward slash or an upward slash.
+
   - spears
 	- less damange, he can't move during the thurst of spears
-  - mace
-	- longer and more damange but slower swing.
   - glaive
 	- longer and more damange but slower swing.
-  - arrow
-	- long range but little damange
   - two swords 
-	-uses two swords but less range as oppose to the katana/long katana.
+	-uses two swords but less range as oppose to the katana/long katana can do more combos.
 
 -weapon combo advance:
 	-Each player can choose a 1 of the 2 skills tress that makes up the last 3 combo after combo number 4.
@@ -60,31 +70,166 @@ Game Description:
 -special moves:
 	- Each player gets to equip a total of 5 specials moves at once ranging from elements. 
 	- Each speical has 4 levels where a player can put points into the specials to make them evolve and make them stronger.
-	
+
+<Special Moves> 
+Each special moves base damage will be based on the gear a player wears that will provide elemental damage based on the special.
+<Katana special moves> 
+
+1st special move:
+<level 1> Dragon fire Uppercut- orange flame uppercut with ninja doing an uppercut and sword going upward with some flames on the blade.
+<level 2> Dragon flame rising - redish orange uppercut with more flames then level 1. has a 2% chance of burning enemies except boss
+<level 3> Dragon flame rising claw - redish uppercut with a dragon claw fire animation coming out of the flames bigger flames then level 2.
+ has a 8% chance of burning an enemy except bosses.
+<level 4> Red Dragon Zero uppercut - Red flames comes out of the sword with a reddragon animation for red flames which is bigger then level 3.
+has a 12% chance of burning an enemy except bosses. 
+
+2nd Special move:
+<level 1> Lighting tiger stab- light blue electric downward slash where ninja jumps up and does a downward stab with electricty on the sword.
+<level 2> Lighting tigher claw - faint blue electric downward slash where ninja jumps up and does a more powerful stab with more electrcity  
+has a 2% chance of stunning enemies except bosses. 
+<level 3> Lighting tiger pounce - yelloish electic downard slash where ninja does a sword dive on an enemy with a tiger animation pouncing on them
+has a 8% of stunning an enemy. 
+<level 4> Mega Electric lighting tiger stab - a yellow electric stab that creates electic shockwaves on the ground with short range that can hurt enemies around them.
+has a 12% of stunning enemy except bosses. 
+
+3rd  Special move: 
+<level 1> shadow surprise - ninja turns into smoke and appears behind the enemy.
+- does not damage
+<level 2> Darkness surprise ninja turns into smoke and appears behind the enemy, if the ninja is next to the robot he can teleport away from the robot.
+-does no damage
+<level 3> Shadow slash - ninja turns into smoke and slashs the enemy nearby.
+-Does little damage
+<level 4> Deadly Reaper - ninja turns into smokes and slashs the next 3 enemies nearby
+-Does little damage but is a quick attack.
+
+4th Special move: 
+<level 1> Icy thrust - ninja does a icy thrust sword dash at a enemy. 
+<level 2> Icy thrust advance - ninja does an icy thrust sword dash at an enemy with more ice on the sword. 
+2% of freezing an enemy except bosses.
+<level 3> Icy thrust zero - ninja does an icy thrust sword dash at an enemy with more ice on the sword.
+8% chance of freezing an enemy except bosses.
+<level 4> Phantom thrust - ninja does an icy thrust sword dash that looks like a phantom
+12% of freezing an enemy except bosses
+
+5th special move:
+<level 1> Earth smash - ninja hits the ground with sword sends rock towards the enemies.
+<level 2> ground crusher - ninja hits the ground with sword sends 2 large rocks towards the enemy.
+<level 3> The Driller - ninja sword drills the ground sending small and 2 large rocks towards an enemy.
+<level 4> Earth smash - ninja hits the ground and sends 5 rocks towards an enemy.
+
+6th special move:
+<level 1> wind slash - ninja slashs the air and creates an a slash that cuts the enemy. 
+<level 2> Force slash - ninja cuts the air with sword creating a slash that will cut two enemies within the same area.
+<level 3> tornado slash - ninja creates a small tornado slash that cuts enemies near the ninja
+<level 4> wind force tornado - ninja does a spin that creates a tornado that slashs enemies around the ninja.
+
+7th speical move: 
+<level 1> Ice sword throw - sword is turned into ice and thrown at an enemy.
+<level 2> Icy sword boomrang - ninja creates a ice needle by swing sword that is thrown at an enemy
+<level 3> Icy double sword boomrang: ninja creates 2 ice needles by swing sword that is thrown at an enemy 
+<level 4> Icy mega boomrang: ninja throws 2 icy needles and its ice sword at the enemy
+
+8th special move: 
+<level 1> flaming burst - sword swing creates 3 mini fire balls that is thrown at the enemy.
+<level 2> fireball swing - sword swing a medium size fire ball being launched at an enemy.
+<level 3> fireball meteor - sword swing creates a huge fire ball being launched at an enemy.
+<level 4> fireball explosion - sword swing creates 2 huge fire ball that is swing at the right and left side of the ninja.
+
+9th special move: 
+<level 1> Electric strike: an electric sword thrust.
+<level 2> Electric wolf strike: a faster electric sword thrust.
+<level 3> Electric speed strike: a faster electric sword thrust then level 2.
+<level 4> Electric wolf speed strike: a powerful and fast electric sword thrust. 
+
+10th special move: Sand is treated as Earth element.
+<level 1> Sand wave: Ninja swings sword releasing a small sand wave to damage enemies. 
+<level 2> double sand wave: ninja swings sword release 2 small sand waves that damage enemeies. 
+<level 3> sand storm wave: ninja swing sword sends a bigger sand wave that damages enemies.
+<level 4> Desert storm: ninja swings sword sends a bigger sand wave then level 3.
+
+11th speical move: 
+<level 1> Water dive attack: ninja dives with sword made of water..
+<level 2>  Water dive strike: ninja dives with sword made of water, sword can create a small wave in front of ninja that damages nearby enemies if attack misses not waves are limited range. 
+<level 3> water dive strike advance: ninja dives with bigger sword of water creates two waves going left and right of ninja with limited range.
+<level 4> water hammer strike: water on sword looks like a hammer and can create two waves going left to right of ninja with limited range.
+
 	
   
-- clothing:
-  - hat:
-	- ninja mask + 3 stealth
-	- cap + 3 agility
-	- cowboyhat +3 range damange attack
-  - face
-	- hockey mask +3 health (loot) but lower percentage
-    - welding mask +5 health (loot) but lower percentage
+- clothing: 
+definition F means female only
+	   M means Male only 
+	   OS means online store only item
+	   colors of the gear will be put next to the gear name
+  - top:
+	-Ninja suit(black):
+	-(stats) + 5 def, + 5 attack, + 5 speed, +5 health, +2% chance of loot
+
+	-Stealth suit(black or white): 
+	(stats)+10 elemental damage, +20 def, + 20 health, +2% loot +20 speed (set boost wearring  top, head, shoes, mask, pants gives + 20 shadow boost) OS gear only!
 	
-  - pants
-	- black
-	- blue
-	- green
-	- violet
-	- pink
-	- brown
-	- purlple
-	- yellow
-	- red
+	-Red t-shirt: 
+	(stats) +20 fire boost damage, +20 def, +20 health, +1% loot. OS gear only!
 	
-  - magnatic suit:
-    - weapon return when a player do range attack.
+	- magnatic suit: weapon return when a player do range attack
+	
+	- tank top F only:
+	(stats) + 20 ice damage, +20 def, +20 health, +1% loot. OS gear only!
+	
+	- cowboy suit 
+	(status)+20 earth damage boost, +5 range damage, +20 def, +20 health. OS gear only!
+	(more to come) 
+  	
+- hat:
+	
+	- ninja cap (black)
+	(stats)+ 3 agility, +2 def, + 2 health
+	
+
+	- cowboyhat 
+	(stats) +3 range damange attack, +3 earth damage, +3 health. OS gear only!
+	
+	- stealth head garb (black or white)
+	(stats)+ 3 elemental damage, +3 def, +3 health (set boost wearring  top, shoes, head, face pants gives + 20 shadow boost) OS store only!
+	(more to come)
+ - face:
+	- ninja mask: (black)
+	(stats) +2 attack, +2 def, + 1 speed (ninja starts out with this suit)
+	
+	- hockey mask 
+	(stats)+3 health, + 3 def, + 2% loot OS store only!
+       
+	 - welding mask:
+	(stats) +5 health, +2 def, +1% loot
+	
+	- stealth mask: (black)
+	(stats)+ 3 elemental damage, +3 health  (set boost wearring  top, shoes, head, face pants gives + 20 shadow boost) OS only!
+	
+	(more to come)
+ 
+- neck:
+	- red orange scarf boost +5 fire boost damage. OS only!
+	(more to come)	
+ 
+
+- pants:
+	-ninja pants (black)
+	(stats) 
+	-stealth pants(colors: black or white) 
+	(stats)+ 10 all elemental damage, +10 def, +10 speed, +10 hp. (set boost wearring  top, shoes, head, mask, face pants gives + 20 shadow boost) OS store only!
+	
+
+	- black skrit F only (colors: black or  white or red) +10 elemental damage. OS store only!
+	
+	- cowboy pants (brown) + 15 earth damage and 5 ranage damage. OS store only!
+   
+-shoes:
+	- ninja sandals - +2 attack,+1 def,+1 speed. ninja starts out with this outfit
+	- stealth shoes(black or white): 
+	(stats) +2 elemental damage, +2 def,+ 2 health, +3 speed. OS store only!
+	- red sneakers - 
+	(stats) +5 fire boost damage, +3 def, +2 health, + 1 speed. OS store only!
+	
+  .
 	
 <ability>
   - clocking
@@ -112,6 +257,10 @@ Game Description:
 <Gear fusion> 
 	- Each gear has a stats points and some gears have a set bonus for looks. 
 	- Gears can be fused where you can change the look of the item and stats to be able to get both the set bonus and the stats you want.
+
+<Crafting items> 
+	- Some weapons/clothing/items can only be crafted with the crafting system.
+	
 		
 		
 		
@@ -142,17 +291,22 @@ If level 4 player looks for level 5 item
 - she or he must wait for level 5 player to sell at shop.
 - selling and buying transition suppose to cost 10 percent.
 
-- if user does not have fake money to buy item, user can convert real money into fake money 
+- if user does not have ingame money to buy item, user can convert real money into ingame money 
   - based on currency value.
+- players can put items on shop and items will stay up when they are not on.
 
 <trade> 
- Players can trade items to others without a percentage. 
+ Players can trade items to others without a percentage using money or gear. 
+ Both players must be on to do this. 
   
  
+
   
  
 Background Music:
   - Depend on Player, so player derived a music file from his computer
   - and play his own music file.
   
+
+
   

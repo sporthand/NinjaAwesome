@@ -51,6 +51,7 @@ public class EnemyBullet extends GameObj implements Hostile {
 	public void update() {
 
 		if (!hit) {
+			xLoc -= speed;
 			yLoc += speed;
 			if (yLoc >= (Game.HEIGHT + 10)) {
 				c.removeHostile(this);
