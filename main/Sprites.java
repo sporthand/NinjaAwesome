@@ -34,6 +34,8 @@ public class Sprites {
 	// public static BufferedImage ep3[] = new BufferedImage[1];
 	public static BufferedImage strBullet[] = new BufferedImage[2];
 	private static BufferedImage life[] = new BufferedImage[2];
+	public static BufferedImage building01[] = new BufferedImage[2];
+	public static BufferedImage road01[] = new BufferedImage[1];
 
 	public Sprites(Game game) {
 		getSprites();
@@ -94,6 +96,13 @@ public class Sprites {
 			// ep3[0] = loader.loadImage("/resources/enemy4_strip3.png");
 
 			life[0] = loader.loadImage("/resources/life.png");
+
+			building01[0] = loader.loadImage("/resources/building01.png");// added
+																			// and								// Kim's
+																			// Implemetation
+			road01[0] = loader.loadImage("/resources/road01.png"); // I did it
+																	// from Jung
+																	// Hwan Kim
 
 			// ///////////////////////////////////////////////////
 
@@ -179,11 +188,43 @@ public class Sprites {
 	}
 
 	/*
-	 * Boss suppose to be different depending on each level.
-	 * The tip of implementation of programming  is
-	 * public BufferedImage[] getEnemySprite()*/
+	 * Boss suppose to be different depending on each level. The tip of
+	 * implementation of programming is public BufferedImage[] getEnemySprite()
+	 */
 	public BufferedImage getBoss() {
 		return boss;
-		
+
+	}
+
+	public BufferedImage[] getBuilding(int i) {
+
+		int ran;
+		Random r = new Random();
+		ran = 1; // we will make an randomize you know how to do according to
+					// getEnemy();
+		switch (ran) {
+		case 1:
+			return building01;
+		case 2:
+			return ep1;
+			// case 3:
+			// return ep2;
+		default:
+			return ep1;
+		}
+	}
+
+	public BufferedImage[] getRoad(int i){
+		int ran;
+		Random r = new Random();
+		ran = 1;
+		switch(ran){
+		case 1:
+			return road01;
+		case 2:
+			return ep1;
+		default:
+			return ep1;
+		}
 	}
 }

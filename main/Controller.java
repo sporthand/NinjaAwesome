@@ -10,10 +10,11 @@ import GameObject.*;
 
 public class Controller {
 	private LinkedList<Island> il = new LinkedList<Island>();
-	
+	private LinkedList<Building> bl = new LinkedList<Building>(); // I added for building from Jung Hwan Kim's Implementation
 	private LinkedList<Friendly> fl = new LinkedList<Friendly>();
 	private LinkedList<Hostile>  hl = new LinkedList<Hostile>();
 	private LinkedList<Neutral>  nl = new LinkedList<Neutral>();
+	private LinkedList<Road> rl = new LinkedList<Road>();
 	
 	//Variables
 	Friendly f;
@@ -21,6 +22,9 @@ public class Controller {
 	Neutral n;
 	Random r = new Random();
 	Island TempIsland;
+	Building b; // defined from Jung Hwan Kim's Implementation
+	Road rd;
+	
 	Game game;
 	Sprites s;
 
@@ -60,10 +64,30 @@ public class Controller {
 			n = nl.get(i);
 			n.update();
 		}
+		//Building from Jung Hwan Kim's Implementation
+		for (int i =0; i <bl.size(); i++){
+			b = bl.get(i);
+			b.update();
+		}
+		
+		for (int i=0; i <rl.size();i++){
+			rd = rl.get(i);
+			rd.update();
+		}
 			
 	}
 
 	public void draw(Graphics g) {
+		
+		//Building from Jung Hwan Kim's
+		for (int i =0; i< rl.size(); i++){
+			rd = rl.get(i);
+			rd.draw(g);
+		}
+		for (int i =0; i <bl.size(); i++){
+			b = bl.get(i);
+			b.draw(g);
+		}
 		//Neutral
 		for(int i = 0; i < nl.size(); i++){
 			n = nl.get(i);
@@ -85,6 +109,9 @@ public class Controller {
 			h = hl.get(i);
 			h.draw(g);
 		}
+		
+		
+		
 	}
 
 	public void addFriendly(Friendly block) {
@@ -106,6 +133,21 @@ public class Controller {
 	public void addIsland(Island i) {
 		this.il.add(i);
 	}
+	//add building from Jung Hwan Kim's Implementation
+	public void addBuilding(Building b){
+		this.bl.add(b);
+	}
+	//remove building from Jung Hwan Kim's Implementation
+	public void removeBuilding(Building b){
+		this.bl.remove(b);
+	}
+	
+	public void addRoad (Road rd){
+		this.rl.add(rd);
+	}
+	public void removeRoad (Road rd){
+		this.rl.remove(rd);
+	}
 	
 	public void spawnEnemy(int enemy_count) {
 		for (int i = 0; i < enemy_count; i++){
@@ -120,6 +162,22 @@ public class Controller {
 		}
 	}
 	
+	// spawn buldings from Jung Hwan Kim's Implementation
+	public void spawnBuilding(int building_count)
+	{
+		for (int i =0; i<building_count; i++){
+			addBuilding(new Building(800*i,-100,this.game,this,s));
+				
+		}
+	}
+	
+	public void spawnRoad(int road_count)
+	{
+		for (int i =0; i <road_count; i++)
+			addRoad(new Road(i*1057,450,this.game,this,s));
+	}
+	
+	
 	public void addBoss(){
 		addHostile(new Boss(450,10,this.game,this,s));
 	}
@@ -127,6 +185,8 @@ public class Controller {
 	public void addNeutral(Neutral n){
 		this.nl.add(n);
 	}
+	
+	
 	public void removeNeutral(Neutral n){
 		this.nl.remove(n);
 	}
@@ -140,5 +200,13 @@ public class Controller {
 	public LinkedList<Neutral> getNeutral(){
 		return nl;
 	}
+	// return LinkedList Building from Jung Hwan Kim's Implemetation
+	public LinkedList<Building> getBuilding(){
+		return bl;
+	}
+	public LinkedList<Road> getRoad(){
+		return rl;
+	}
+	
 	
 }

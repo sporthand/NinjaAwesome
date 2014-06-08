@@ -74,9 +74,9 @@ public class Enemy extends GameObj implements Hostile {
 			// MOVEMENT
 			if (ticks % 20 >= 8) {
 				if (game.getPlane().getX() < this.getX())
-					xLoc -= speed;
+					xLoc -= (speed+ game.getPlane().getSpeedX());
 				if (game.getPlane().getX() > this.getX())
-					xLoc += speed;
+					xLoc += (speed+ game.getPlane().getSpeedX());
 				if (game.getPlane().getY() < this.getY())
 					yLoc -= speed;
 				if (game.getPlane().getY() > this.getY())

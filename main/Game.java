@@ -18,7 +18,7 @@ public class Game extends Canvas implements Runnable {
 	// FIELDS
 	private static final long serialVersionUID = 1L;
 	public static final int WIDTH = 740;
-	public static final int HEIGHT = 620;
+	public static final int HEIGHT = 650;
 	public static final int SCALE = 2;
 	public final String TITLE = "2D Plane Shooter Game";
 
@@ -39,9 +39,13 @@ public class Game extends Canvas implements Runnable {
 	private int enemy_count = 2;
 	private int enemy_killed = 0;
 	private int totalKilled = 0;
-
+	private int building_count =20;
+	private int road_count =20;
+	
 	public LinkedList<Friendly> fl;
 	public LinkedList<Hostile> hl;
+	public LinkedList<Building> bl;
+	public LinkedList <Road> rl;
 
 	// ///SOUND////////
 	public Sound bgMusic;
@@ -86,11 +90,16 @@ public class Game extends Canvas implements Runnable {
 
 		}
 		sb = new ScoreBoard(30, 0, 3, 0, this, s);
-		mp = new MyPlane(WIDTH / 4 + 32, 500, this, c, s);
+		mp = new MyPlane(WIDTH / 4 + 100, HEIGHT/4+200, this, c, s);
 		mp2 = new MyPlane(WIDTH - 100, 500, this, c, s);
 		c.spawnEnemy(enemy_count);
+		c.spawnBuilding(building_count);// I added for building from Jung Hwan Kim
+		c.spawnRoad(road_count);
 		fl = c.getFriendly();
 		hl = c.getHostile();
+		bl = c.getBuilding();
+		rl = c.getRoad();
+		
 	}
 
 	private synchronized void start() {
@@ -169,12 +178,12 @@ public class Game extends Canvas implements Runnable {
 				// TIMELINE HANDLING
 				if (totalKilled <= 30) {
 					if (enemy_killed >= enemy_count) {
-						enemy_count += 2;
+						enemy_count += 1;
 						enemy_killed = 0;
 						c.spawnEnemy(enemy_count);
 					}
 				}
-				if (totalKilled == 2 && bossSpawn) {
+				if (totalKilled == 30 && bossSpawn) {
 					bossSpawn = false;
 					System.out.println("BOSS HAS SPAWNED!");
 					c.addBoss(); // boss spawned at this source code!

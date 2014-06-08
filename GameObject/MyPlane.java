@@ -86,7 +86,7 @@ public class MyPlane extends GameObj implements Friendly {
 		}
 
 		if (!isDead) {
-			xLoc += speedX;
+			//xLoc += speedX;
 			yLoc += speedY;
 
 			// SET BOUNDS
@@ -96,11 +96,11 @@ public class MyPlane extends GameObj implements Friendly {
 			if (xLoc >= 690) {
 				xLoc = 690;
 			}
-			if (yLoc <= 0) {
-				yLoc = 0;
+			if (yLoc <= 350) {
+				yLoc = 350;
 			}
-			if (yLoc >= 500) {
-				yLoc = 500;
+			if (yLoc >= 450) {
+				yLoc = 450;
 			}
 
 			//ENEMY COLLISIONS
