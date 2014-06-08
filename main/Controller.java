@@ -109,14 +109,14 @@ public class Controller {
 	
 	public void spawnEnemy(int enemy_count) {
 		for (int i = 0; i < enemy_count; i++){
-			addHostile(new Enemy(700,r.nextInt(500),1,this,this.game,s));
+			addHostile(new Enemy(700,350+r.nextInt(150),1,this,this.game,s));
 		}
 	}
 	
 	public void spawnEnemy2(int enemy_count) {
 		System.out.println("SPAWN 2");
 		for (int i = 0; i < enemy_count; i++){
-			addHostile(new Enemy(700,r.nextInt(500),-1,this,this.game,s));
+			addHostile(new Enemy(700,350+r.nextInt(150),-1,this,this.game,s));
 		}
 	}
 	

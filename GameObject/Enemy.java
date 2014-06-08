@@ -14,7 +14,6 @@ import main.Sound;
 import main.Sprites;
 import GameObject.MyPlane;
 
-
 public class Enemy extends GameObj implements Hostile {
 
 	Random r = new Random();
@@ -31,16 +30,16 @@ public class Enemy extends GameObj implements Hostile {
 	Sprites s;
 	Animation anim, explosion;
 
-	public Enemy(int x, int y,int speed, Controller c, Game game, Sprites s) {
+	public Enemy(int x, int y, int speed, Controller c, Game game, Sprites s) {
 		super(x, y);
 		this.s = s;
 		this.c = c;
-		this.speed = (r.nextInt(3) + 2)*speed;
+		this.speed = (r.nextInt(3) + 2) * speed;
 		this.game = game;
 		image = s.getEnemySprite();
 		e = s.getExplosion2();
 		explosion = new Animation(5, e[0], 65, 65, 4);
-		anim = new Animation(5, image[0],200,200,4);
+		anim = new Animation(5, image[0], 200, 200, 4);
 		boom = new Sound("/resources/snd_explosion2.wav");
 	}
 
@@ -53,16 +52,16 @@ public class Enemy extends GameObj implements Hostile {
 				c.removeHostile(this);
 				setIsDead(false);
 				setTimer(0);
-				//1P
-				if(game.getState() == game.getState().GAME){
-				game.getPlane().setScore(game.getPlane().getScore()+5);
+				// 1P
+				if (game.getState() == game.getState().GAME) {
+					game.getPlane().setScore(game.getPlane().getScore() + 5);
 				}
-				//2P
-				if(game.getState() == game.getState().MULTI){
-					game.getPlane().setScore(game.getPlane().getScore()+5);
-					game.getPlane2().setScore(game.getPlane2().getScore()+5);
-					}
-				//INCREMENT KILL COUNTS
+				// 2P
+				if (game.getState() == game.getState().MULTI) {
+					game.getPlane().setScore(game.getPlane().getScore() + 5);
+					game.getPlane2().setScore(game.getPlane2().getScore() + 5);
+				}
+				// INCREMENT KILL COUNTS
 				game.setEnemy_killed(game.getEnemy_killed() + 1);
 				game.setTotalKilled(game.getTotalKilled() + 1);
 				System.out.println("total Killed:" + game.getTotalKilled());
@@ -70,17 +69,19 @@ public class Enemy extends GameObj implements Hostile {
 			timer++;
 		}
 
-		if (!isDead) { // is where I put no enemy plane spawn!!! I set !isDead --> isDead to test the player
+		if (!isDead) { // is where I put no enemy plane spawn!!! I set !isDead
+						// --> isDead to test the player
 			// MOVEMENT
-			if (game.getPlane().getX() < this.getX())
-				xLoc -= speed;
-			if (game.getPlane().getX() >this.getX())
-				xLoc += speed;
-			if (game.getPlane().getY() <this.getY())
-				yLoc -= speed;
-			if (game.getPlane().getY() >this.getY()) 
-				yLoc += speed;
-			
+			if (ticks % 20 >= 8) {
+				if (game.getPlane().getX() < this.getX())
+					xLoc -= speed;
+				if (game.getPlane().getX() > this.getX())
+					xLoc += speed;
+				if (game.getPlane().getY() < this.getY())
+					yLoc -= speed;
+				if (game.getPlane().getY() > this.getY())
+					yLoc += speed;
+			}
 			// BOUNDS
 			if (yLoc >= (Game.HEIGHT + 10)) {
 				yLoc = -15;
@@ -90,8 +91,10 @@ public class Enemy extends GameObj implements Hostile {
 			// SHOOTING AI
 			if (ticks % 40 == 0) { // delay to shoot until timer 40.
 				if (r.nextInt(2) == 1) {
-					/*c.addHostile(new EnemyBullet(this.xLoc, this.yLoc,
-							this.speed + 1, this.game, this.c, this.s));*/
+					/*
+					 * c.addHostile(new EnemyBullet(this.xLoc, this.yLoc,
+					 * this.speed + 1, this.game, this.c, this.s));
+					 */
 					if (r.nextInt(3) == 1) {
 						// c.addHostile(new StrongBullet(this.xLoc, this.yLoc,
 						// this.speed + 1, this.game, this.c, this.s));
@@ -100,20 +103,23 @@ public class Enemy extends GameObj implements Hostile {
 			}
 
 			for (int i = 0; i < game.fl.size(); i++) {
-				Bullet tempFriend = (Bullet)game.fl.get(i);
+				Bullet tempFriend = (Bullet) game.fl.get(i);
 				// COLLISION WITH BULLETS
 				if (Physics.collision(this, tempFriend)) {
 					c.removeFriendly(tempFriend);
 					tempFriend.setHit(true);
-					//1P
-					if(game.getState() == game.getState().GAME){
-					game.getPlane().setScore(game.getPlane().getScore()+15);
+					// 1P
+					if (game.getState() == game.getState().GAME) {
+						game.getPlane().setScore(
+								game.getPlane().getScore() + 15);
 					}
-					//2P
-					if(game.getState() == game.getState().MULTI){
-						game.getPlane().setScore(game.getPlane().getScore()+15);
-						game.getPlane2().setScore(game.getPlane2().getScore()+15);
-						}
+					// 2P
+					if (game.getState() == game.getState().MULTI) {
+						game.getPlane().setScore(
+								game.getPlane().getScore() + 15);
+						game.getPlane2().setScore(
+								game.getPlane2().getScore() + 15);
+					}
 					this.setIsDead(true);
 					boom.play(false);
 				}
@@ -126,7 +132,7 @@ public class Enemy extends GameObj implements Hostile {
 		if (isDead) {
 			explosion.drawAnimation(g, xLoc, yLoc + 10);
 		} else
-			 anim.drawAnimation(g, xLoc, yLoc);
+			anim.drawAnimation(g, xLoc, yLoc);
 	}
 
 	public Rectangle getBounds() {

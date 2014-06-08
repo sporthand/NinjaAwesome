@@ -73,6 +73,8 @@ Game Description:
 
 <Special Moves> 
 Each special moves base damage will be based on the gear a player wears that will provide elemental damage based on the special.
+
+
 <Katana special moves> 
 
 1st special move:

@@ -117,13 +117,13 @@ public class Boss extends GameObj implements Hostile {
 				if(direction.equals("left")){
 					//System.out.println ("Boss" + direction + "\n");
 					this.setAttackSpeed(-10);
-					if (xLoc <30)
+					if (xLoc <=30)
 						this.setDirection("right");
 					
 				}
 				else if (direction.equals("right")){
 					this.setAttackSpeed(10);
-					if (xLoc> 390){
+					if (xLoc>=390){
 						this.setDirection("up");
 						this.setAttackSpeed(0);
 						bossAction =0;
