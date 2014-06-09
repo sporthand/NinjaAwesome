@@ -79,11 +79,12 @@ public class Controller {
 
 	public void draw(Graphics g) {
 		
-		//Building from Jung Hwan Kim's
+		//Road from Jung Hwan Kim's Implementation
 		for (int i =0; i< rl.size(); i++){
 			rd = rl.get(i);
 			rd.draw(g);
 		}
+		//Building from Jung Hwan Kim's
 		for (int i =0; i <bl.size(); i++){
 			b = bl.get(i);
 			b.draw(g);
@@ -162,19 +163,27 @@ public class Controller {
 		}
 	}
 	
-	// spawn buldings from Jung Hwan Kim's Implementation
+	// spawn buildings from Jung Hwan Kim's Implementation
 	public void spawnBuilding(int building_count)
 	{
-		for (int i =0; i<building_count; i++){
-			addBuilding(new Building(800*i,-100,this.game,this,s));
+		
+		for (int i =0; i<building_count; i++)			
+				addBuilding(new Building(800*(-i),-100,this.game,this,s));
 				
-		}
+			
+		
+				
+		
+			
+				
+				
+		
 	}
 	
 	public void spawnRoad(int road_count)
 	{
 		for (int i =0; i <road_count; i++)
-			addRoad(new Road(i*1057,450,this.game,this,s));
+			addRoad(new Road((-i)*1057,450,this.game,this,s));
 	}
 	
 	

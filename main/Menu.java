@@ -21,7 +21,7 @@ public class Menu {
 		Font fnt0 = new Font("arial", Font.BOLD,50);
 		g.setFont(fnt0);
 		g.setColor(Color.white);
-		g.drawString("WING MAN", Game.WIDTH/2 - 140, 100);
+		g.drawString("Ninja Awesome", Game.WIDTH/2 - 140, 100);
 		
 		Font fnt1 = new Font("arial", Font.BOLD,30);
 		g.setFont(fnt1);
@@ -30,7 +30,7 @@ public class Menu {
 		g.drawString("High Scores", hiScore.x+16,hiScore.y+ 35);
 		g.drawString("Quit", quitButton.x+19, quitButton.y+35);
 		
-		g.setColor(Color.white);
+		g.setColor(Color.yellow);
 		g2d.draw(playButton);
 		g2d.draw(multiButton);
 		g2d.draw(hiScore);

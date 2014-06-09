@@ -39,13 +39,13 @@ public class Game extends Canvas implements Runnable {
 	private int enemy_count = 2;
 	private int enemy_killed = 0;
 	private int totalKilled = 0;
-	private int building_count =20;
-	private int road_count =20;
-	
+	private int building_count = 4;
+	private int road_count = 4;
+
 	public LinkedList<Friendly> fl;
 	public LinkedList<Hostile> hl;
 	public LinkedList<Building> bl;
-	public LinkedList <Road> rl;
+	public LinkedList<Road> rl;
 
 	// ///SOUND////////
 	public Sound bgMusic;
@@ -90,16 +90,17 @@ public class Game extends Canvas implements Runnable {
 
 		}
 		sb = new ScoreBoard(30, 0, 3, 0, this, s);
-		mp = new MyPlane(WIDTH / 4 + 100, HEIGHT/4+200, this, c, s);
+		mp = new MyPlane(WIDTH / 4 + 100, HEIGHT / 4 + 200, this, c, s);
 		mp2 = new MyPlane(WIDTH - 100, 500, this, c, s);
 		c.spawnEnemy(enemy_count);
-		c.spawnBuilding(building_count);// I added for building from Jung Hwan Kim
+		c.spawnBuilding(building_count);// I added for building from Jung Hwan
+										// Kim
 		c.spawnRoad(road_count);
 		fl = c.getFriendly();
 		hl = c.getHostile();
 		bl = c.getBuilding();
 		rl = c.getRoad();
-		
+
 	}
 
 	private synchronized void start() {
@@ -351,8 +352,7 @@ public class Game extends Canvas implements Runnable {
 				mp.setSpeedX(5);
 				mp.setIsRunning(true);
 				mp.setDirection("right");
-			}
-			else if (key == KeyEvent.VK_LEFT) {
+			} else if (key == KeyEvent.VK_LEFT) {
 				mp.setSpeedX(-5);
 				mp.setIsRunning(true);
 				mp.setDirection("left");
@@ -366,14 +366,16 @@ public class Game extends Canvas implements Runnable {
 			if (key == KeyEvent.VK_SPACE && !shooting) {
 				shooting = true;
 				if (mp.isPowerup()) {
-					c.addFriendly(new Bullet(mp.getX() + 16, mp.getY() - 5,'s', this, c, s));
-					c.addFriendly(new Bullet(mp.getX() + 16, mp.getY() - 5,'r', this, c, s));
+					c.addFriendly(new Bullet(mp.getX() + 16, mp.getY() - 5,
+							's', this, c, s));
+					c.addFriendly(new Bullet(mp.getX() + 16, mp.getY() - 5,
+							'r', this, c, s));
 					c.addFriendly(new Bullet(mp.getX(), mp.getY() - 5, 'l',
 							this, c, s));
 				}
 				if (!mp.isPowerup()) {
-					c.addFriendly(new Bullet(mp.getX() + 20, mp.getY(),
-							's', this, c, s));
+					c.addFriendly(new Bullet(mp.getX() + 20, mp.getY(), 's',
+							this, c, s));
 				}
 			}
 		}
@@ -434,11 +436,11 @@ public class Game extends Canvas implements Runnable {
 			if (key == KeyEvent.VK_RIGHT) {
 				mp.setIsRunning(false);
 				mp.setSpeedX(0);
-				
+
 			} else if (key == KeyEvent.VK_LEFT) {
 				mp.setIsRunning(false);
 				mp.setSpeedX(0);
-				
+
 			} else if (key == KeyEvent.VK_DOWN) {
 				mp.setSpeedY(0);
 			} else if (key == KeyEvent.VK_UP) {
@@ -534,21 +536,20 @@ public class Game extends Canvas implements Runnable {
 
 	// func: drawBackGroudWithTileImage
 	// produce the background
-	
+
 	public void drawBackGroundWithTileImage(int w, int h, Graphics2D g2) {
 		Image sea;
 		sea = s.getBackgroundSprite();
 		int TileWidth = 800;
-		int TileHeight =800;
-
+		int TileHeight = 800;
 
 		// Image Buffer = createImage(NumberX * TileWidth, NumberY *
 		// TileHeight);
 
-		
-		g2.drawImage(sea,0+ (move % TileWidth), 0, TileWidth, TileHeight, this);
-			
-		move=0;
+		g2.drawImage(sea, 0 + (move % TileWidth), 0, TileWidth, TileHeight,
+				this);
+
+		move = 0;
 	}
 
 	public static STATE getState() {

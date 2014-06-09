@@ -43,23 +43,23 @@ public class Road extends GameObj{
 	}
 
 	public void update() {
-		if (xLoc <-1600 || xLoc >1600) {
-			c.removeRoad(this);
-			
-		}
-		/* The boss movement is here and action!
-		 *  ****************************************************************************************************************/
 		
-		if (xLoc >=-1600 && xLoc<= 1600) {
-			if (game.getPlane().getDirection().equals("left")&& game.getPlane().getSpeedX() <0)
-				xLoc +=speed;
-			else if (game.getPlane().getDirection().equals("right")&& game.getPlane().getSpeedX()>0)
+		if (xLoc >= -2600 && xLoc <= 2600) {
+			if (game.getPlane().getDirection().equals("left")
+					&& game.getPlane().getSpeedX() < 0){
+				xLoc += speed;
+				if (xLoc >2600)
+					c.removeRoad(this);
+				//c.addBuilding(this);
+			}
+			else if (game.getPlane().getDirection().equals("right")
+					&& game.getPlane().getSpeedX() > 0){
 				xLoc -= speed;
-			 
-				
-					
-		}
-		/**********************************************************************************************************************/	
+				if (xLoc <-2600)
+					c.removeRoad(this);
+				//c.addBuilding(this);
+			}
+		}	
 			
 			
 		

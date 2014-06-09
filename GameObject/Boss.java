@@ -16,7 +16,7 @@ import main.Sprites;
 
 public class Boss extends GameObj implements Hostile {
 
-	private int HEALTH = 150;
+	private int HEALTH = 900;
 	private boolean isDead = false;
 	private BufferedImage image;
 	private BufferedImage[] e;

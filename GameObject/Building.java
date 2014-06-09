@@ -46,19 +46,23 @@ public class Building extends GameObj {
 	}
 
 	public void update() {
-		if (xLoc < -1600 || xLoc > 1600) {
-			c.removeBuilding(this);
-
-		}
-
-		if (xLoc >= -1600 && xLoc <= 1600) {
+		
+		// building movement when a player press movement key: Jung Hwan Kim
+		if (xLoc >= -2600 && xLoc <= 2600) {
 			if (game.getPlane().getDirection().equals("left")
-					&& game.getPlane().getSpeedX() < 0)
+					&& game.getPlane().getSpeedX() < 0){
 				xLoc += speed;
+				if (xLoc >2600)
+					c.removeBuilding(this);
+				//c.addBuilding(this);
+			}
 			else if (game.getPlane().getDirection().equals("right")
-					&& game.getPlane().getSpeedX() > 0)
+					&& game.getPlane().getSpeedX() > 0){
 				xLoc -= speed;
-
+				if (xLoc <-2600)
+					c.removeBuilding(this);
+				//c.addBuilding(this);
+			}
 		}
 
 	}
