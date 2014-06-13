@@ -20,7 +20,7 @@ public class Sprites {
 	private static BufferedImage enemyBullet = null;
 	private static BufferedImage powerup = null;
 	private static BufferedImage boss = null;
-
+	
 	// ANIMATION ARRAYS
 	public static BufferedImage at[] = new BufferedImage[2];
 	public static BufferedImage swings[] = new BufferedImage[2];
@@ -35,6 +35,7 @@ public class Sprites {
 	public static BufferedImage strBullet[] = new BufferedImage[2];
 	private static BufferedImage life[] = new BufferedImage[2];
 	public static BufferedImage building01[] = new BufferedImage[2];
+	public static BufferedImage building02[] = new BufferedImage[2];
 	public static BufferedImage road01[] = new BufferedImage[1];
 
 	public Sprites(Game game) {
@@ -98,7 +99,7 @@ public class Sprites {
 			life[0] = loader.loadImage("/resources/life.png");
 
 			building01[0] = loader.loadImage("/resources/building01.png");// added
-																			// and								// Kim's
+			building02[0] = loader.loadImage("/resources/building02.png");																// and								// Kim's
 																			// Implemetation
 			road01[0] = loader.loadImage("/resources/road01.png"); // I did it
 																	// from Jung
@@ -196,17 +197,13 @@ public class Sprites {
 
 	}
 
-	public BufferedImage[] getBuilding(int i) {
+	public BufferedImage[] getBuilding(int whatBuilding) {
 
-		int ran;
-		Random r = new Random();
-		ran = 1; // we will make an randomize you know how to do according to
-					// getEnemy();
-		switch (ran) {
-		case 1:
+		switch (whatBuilding) {
+		case 0:
 			return building01;
-		case 2:
-			return ep1;
+		case 1:
+			return building02;
 			// case 3:
 			// return ep2;
 		default:

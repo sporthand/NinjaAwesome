@@ -39,8 +39,8 @@ public class Game extends Canvas implements Runnable {
 	private int enemy_count = 2;
 	private int enemy_killed = 0;
 	private int totalKilled = 0;
-	private int building_count = 4;
-	private int road_count = 4;
+	private int building_count = 3;
+	private int road_count = 3;
 
 	public LinkedList<Friendly> fl;
 	public LinkedList<Hostile> hl;
@@ -69,6 +69,7 @@ public class Game extends Canvas implements Runnable {
 	private ScoreBoard sb;
 	// private Background gb;
 	private Sprites s;
+	private Musics m;
 
 	public void init() {
 		// req
@@ -80,7 +81,10 @@ public class Game extends Canvas implements Runnable {
 		addKeyListener(new KeyInput(this));
 
 		// init
-		bgMusic = new Sound("/resources/background.wav");
+		m = new Musics(this);
+		m.setMusic(0);
+		bgMusic = m.getMusic();
+		
 		menu = new Menu();
 		hiScore = new HiScore();
 		s = new Sprites(this);
@@ -93,9 +97,7 @@ public class Game extends Canvas implements Runnable {
 		mp = new MyPlane(WIDTH / 4 + 100, HEIGHT / 4 + 200, this, c, s);
 		mp2 = new MyPlane(WIDTH - 100, 500, this, c, s);
 		c.spawnEnemy(enemy_count);
-		c.spawnBuilding(building_count);// I added for building from Jung Hwan
-										// Kim
-		c.spawnRoad(road_count);
+		
 		fl = c.getFriendly();
 		hl = c.getHostile();
 		bl = c.getBuilding();
@@ -106,10 +108,11 @@ public class Game extends Canvas implements Runnable {
 	private synchronized void start() {
 		if (running)
 			return;
-
+		
 		running = true;
 		thread = new Thread();
 		thread.start();
+		
 	}
 
 	private synchronized void stop() {
@@ -140,6 +143,8 @@ public class Game extends Canvas implements Runnable {
 
 		// GAME LOOP
 		while (running) {
+			c.spawnBuilding(building_count);// I added for building from Jung 
+			c.spawnRoad(road_count);
 			long now = System.nanoTime();
 			delta += (now - lastTime) / ns;
 			lastTime = now;
@@ -172,6 +177,7 @@ public class Game extends Canvas implements Runnable {
 	private void update() {
 		if (!gameOver) {
 			if (getState() == STATE.GAME) {
+				
 				c.update();
 				sb.update();
 				mp.update();

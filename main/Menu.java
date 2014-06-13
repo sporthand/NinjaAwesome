@@ -5,7 +5,7 @@ import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
-
+//import java.awt.geom.*;
 public class Menu {
 	
 	public Rectangle playButton = new Rectangle(Game.WIDTH/2-65, 150,100,50);

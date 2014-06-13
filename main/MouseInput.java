@@ -5,6 +5,8 @@ import java.awt.event.MouseListener;
 
 import main.Game.STATE;
 
+import GameObject.Musics; // must have music !
+
 public class MouseInput implements MouseListener {
 
 	@Override
