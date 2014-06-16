@@ -33,7 +33,8 @@ CodeCane:
 
 Ninja stats points:
 Attack stats: Increases the damage for physical and special attacks.
-Defense stats: Increases the defense for ninja's and health
+Defense stats: Increases the defense for ninja's.
+vit stats: Increase the HP for a ninja 
 Speed stats:  Increaes the speed of doing an attack and movement.
 Luck stats: chances of increasing crit hits and damage for attacks. (math needs to be worked out to see how much luck = a chance of crital damage)
   
@@ -48,6 +49,11 @@ Game Description:
 
   - kunai knife
 	- using a kunai knife as a close range weapon and a long range weapon
+	- 4 combo moves 
+	- combo 5: user can choose between throwing 3 kuna knives with less damage or throwing one with more damage.
+	- combo 6: user can choose between ninja teleporting behind enemy and slashing them that does little damage, or doing a kuna dash at the enemy.
+	- combo 7: user can choose between ninja doing a dive slash or teleporting behind enemy and throwing a kunai knife at enemy that does little damage.
+
   - katana
 	- two handed sword, better range then two swords but as oppose to spears has less range.
         - 3 combo moves
@@ -58,10 +64,25 @@ Game Description:
 
   - spears
 	- less damange, he can't move during the thurst of spears
+	- 3 combo moves.
+	- combo 4 user can choose between a speed thrusting spear with low damage or throwing the spear at the enemy.
+	- combo 5 user can choose between a uppercut slash or a dive slash where ninja jumps up and dives at the enemy.
+	- combo 6 user can choose between a  longer speed duration thrusting spear with low damage or a powerful thrust at an enemy. 
+	
   - glaive
 	- longer and more damange but slower swing.
+	- 3 combo moves
+	- combo 4 user can choose between a wider swing or a powerful slow thrust.
+	- combo 5 user can choose between a swing that causes rock to come out of the ground or a 5th swing.
+	- combo 6 user can choose between a swing that goes downward with wide angle or ground smash attack that causes more rocks to come out.
+
   - two swords 
 	-uses two swords but less range as oppose to the katana/long katana can do more combos.
+	-3 combo moves
+	- combo 4 user can choose between throwing one of the sword in a stright line, or doing an extra combo slash.
+	- combo 5 user can choose between a short range powerful dash slash or thowing both swords at the enemy in a stright line.
+	- combo 6 user can choose between a choose between an extra powerful combo slash or throwing a sword that swings like a boomrang at an enemy. 
+
 
 -weapon combo advance:
 	-Each player can choose a 1 of the 2 skills tress that makes up the last 3 combo after combo number 4.
@@ -73,9 +94,15 @@ Game Description:
 
 <Special Moves> 
 Each special moves base damage will be based on the gear a player wears that will provide elemental damage based on the special.
+To upgrade the special moves players will get experience points that can be spent on special moves after each level. 
+Level 2 special moves requies 7000 expereince. 
+level 3 speical move upgrade requires 15000 experience points
+level 4 speical moves upgrade will require 60000 experience points. 
+In the future items can be brought with real life money to boost special moves. 
+Each speical moves will require a special move point that is under the HP to recover special move points Ninja must deal damage to enemies to recover some SP points or use an item.
 
 
-<Katana special moves> 
+--------------<Katana special moves> 
 
 1st special move:
 <level 1> Dragon fire Uppercut- orange flame uppercut with ninja doing an uppercut and sword going upward with some flames on the blade.
@@ -154,6 +181,91 @@ has a 12% of stunning enemy except bosses.
 <level 2>  Water dive strike: ninja dives with sword made of water, sword can create a small wave in front of ninja that damages nearby enemies if attack misses not waves are limited range. 
 <level 3> water dive strike advance: ninja dives with bigger sword of water creates two waves going left and right of ninja with limited range.
 <level 4> water hammer strike: water on sword looks like a hammer and can create two waves going left to right of ninja with limited range.
+
+12th special move:
+<level 1> Holy slash: ninja does a light based slash at the same time while dashing towards enemy.
+<level 2> Holy double slash: ninja does 2 slashs light based slash when dashing towards an enemy.
+<level 3> holy strike slash: ninja does a slash that moves in a stright line which comes out of the sword.
+<level 4> holy sword: ninja does 2 slashs that moves in a stright line. which comes out of the sword.
+
+-----------------------<two swords special moves> 
+
+1st  special move:
+<level 1> Lion dive: a orange sword fire dive using two swords.
+<level 2> flaming lion dive: a yellow orange stronger fire sword dive with 2 swords flames are bigger then level 1. has 2% chance of burning an enemy.
+<level 3>  flaming lion rush: a bluish white flame sword dive with 2 swords,flamers are bigger then level 2. has 8% chance of burning an enemy
+<level 4> Blue Lion claw: a blue flame sword dive with 2 swords with a blue lion animation: flamers are bigger then level 3. has a 12% chance of burning an enemy. 
+
+2nd special move:
+<level 1>  hawk uppercut: a white wind uppercut using two swords.
+<level 2> hawk rising claw: a greenish/ white wind uppercut using two swords bigger wind then level 1.
+<level 3> hawk rising wings: a greenish wind uppercut that using two swords animation of a tornado.
+<level 4> hawk rising tornado uppercut: a green wind tornado  that looks like an hawk uppercut that uses two swords. 
+
+3rd special move:
+<level 1> ice boomrang throw: a sword throw using one sword.
+<level 2> ice boomrang slash:  throw using one sword then slashes with the other sword in hand. has a 2% chance of freezing an enemy.
+<level 3> ice boomrang double throw: throws both swords at the enemy. has a 8% chance of freezing an enemy.
+<level 4> ice boomrang quick slash: throws both swords at the enemy then ninja catchs both sword and slashes the enemy. has a 12% chance of freezing an enemy.
+
+4th special move:
+<level 1> holy stealth attack: ninja teleports in a white light in front of the enemy and slashes the enemy with one sword. 
+<level 2> holy stealth double slash: ninja teleports in a white in front of the enemy and slashes the enemy twice with both swords.
+<level 3> holy stealth rush: ninja teleports behind the enemy and slashes them twice with both swords.
+<level 4> holy stealth quick slash: ninja teleports and slashs all nearby enemys with both swords.
+
+----------------------------------<kunai knife special moves>:
+1st special move: 
+<level 1> shadow throw: ninja throws a darkness element kunai knife at an enemy
+<level 2> shadow sneak throw: ninja throws a darkness element kunai at an enemy which hits then from behind.
+<level 3> shadow kunai confusion throw: ninja throws a kunai knife at ane enemy which turns into smoke and reappears in the back or front of the enemy. 
+<level 4> shadow kunai decoy throw: ninja throws a kunai knife at an enemy which turns into smoke and reappears both in the front and back of the enemy where one knife is a fake and the other is real.
+
+2nd special move: 
+<level 1>  kunai tiger fire thrust: ninja does a thrust slash with kunai knife at the enemy.
+<level 2> kunai tirger flaming strike: ninja does a thrust slash with kunai knife at the enemy with bigger flames: 2% chance of burning an enemy.
+<level 3> kunai tiger flaming claw: ninja does a thrust slash with kunai knife at the enemy with bigger flames then level 2: 8% chance of burning an enemy
+<level 4> kunai tiger bite: ninja does a yellow flame slash with kunai knife the thrust slash looks like a yellow tiger and is bigger then level 3. has a 12% change of burning an enemy.
+
+3rd special move: 
+<level 1> Kunai earth summon: ninja jumps up and throws a kunai knife at the enemy, if kunai misses enemy a ground version of the kunai knife will hit the enemy.
+<level 2> kunai earth summon perfect: ninja jumps up and throws a kunai knife at the enemy, if kunai hits enemy a ground version of that kunai knife will still come up and hit the enemy.
+<level 3> kunai earth double summons: ninja throws kunai knife and 2 kunai comes out of the ground under the enemy.
+<level 4> kunai earth ground summon: ninja throws kunai knife and 3 kunari earth type knifes comes out of the ground.
+
+4th special move: 
+ice decoy: ninja turns into ice and teleports to the enemy with a random chance of being in front of the enemy or behind them.
+ice decoy advance: ninja turns into ice and teleports behind the enemy.
+ice decoy suprise: ninja turns into ice and teleports and slashes the enemy.
+ice decoy perfect slash: ninja teleports to the next 3 enemies and slashes all 3 of them.
+
+------------------------<spear special moves>:
+1st Special move:
+<level 1> lighting spear thrust: ninja does a lighting based thrust that is super fast.
+<level 2> lighting spear ultra thrust: ninja does a faster lighting based thrust that last longer then level 1. 2% chance of stunning an enemy.
+<level 3> lighting spear zero thrust: ninja does a faster lighting based thrust that last longer then level 2. 8% chance of stunning an enemy.
+<level 4> lighting spear snake thrust: ninja does a fast lighting based thrust that last longer then level 3 where its spear looks like a snake. 12% chance of stunning an enemy. 
+
+2nd specal move:
+<level 1> flaming boomrang spear attack: ninja throws its firy spear at an enemy.
+<level 2> flaming boomrang spear attack extended: ninja throws its firy spear at an enemy which has longer range then level 1. 2% chance of burning an enemy.
+<level 3> flaming boomrang spear cartwheel: ninja throws its firy spear at an enemy which is wider then level 2. 8% chance of burning an enemy.
+<level 4> flaming boomrang spear omega: ninja throws its firy spear at an enemy which does a cart wheel around the screen. 12% chance of burning an enemy.
+
+3rd special move: 
+<level 1> Earth spear uppercut: ninja does an uppercut with spear using earth element.
+<level 2>  Earth spear ground smash uppercut: ninja hits the ground with its spear does a shock wave that ground uppercut the robots.
+<level 3> Earth spear hidden uppercut: ninja teleports under the ground and dives up under the robot.
+<level 4> Earth spear hidden ground smash: ninja teleports under the ground and dives up under the robot and creates a shockwave that uppercuts other robots near 
+
+4th special move: 
+<level 1> torrando spin: ninja does a wind element spin that hits enemies around it.
+<level 2> torrando spin advance: ninja does a wind element spin that hits enemies around it and torrando is bigger. 
+<level 3> torrando spin force: ninja does a wind element spin that hits enemies around it and creates a bigger torrando.
+<level 4> torrando spin ultimate force: ninja does a wind element spin that hits enemies around it and last longer then the other 3 levels.  
+
+
+
 
 	
   
@@ -311,4 +423,6 @@ Background Music:
   
 
 
-  
+Levels: 
+
+Level 1: 
