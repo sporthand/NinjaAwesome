@@ -25,7 +25,7 @@ public class Game extends Canvas implements Runnable {
 	private Menu menu;
 	private HiScore hiScore;
 
-	private boolean running = false;
+	private boolean running = true;
 	private Thread thread;
 
 	private boolean shooting = false;
@@ -41,6 +41,7 @@ public class Game extends Canvas implements Runnable {
 	private int totalKilled = 0;
 	private int building_count = 3;
 	private int road_count = 3;
+        private int combo = 0;
 
 	public LinkedList<Friendly> fl;
 	public LinkedList<Hostile> hl;
@@ -373,15 +374,23 @@ public class Game extends Canvas implements Runnable {
 				shooting = true;
 				if (mp.isPowerup()) {
 					c.addFriendly(new Bullet(mp.getX() + 16, mp.getY() - 5,
-							's', this, c, s));
+							's', this, c, s, combo));
 					c.addFriendly(new Bullet(mp.getX() + 16, mp.getY() - 5,
-							'r', this, c, s));
+							'r', this, c, s, combo));
 					c.addFriendly(new Bullet(mp.getX(), mp.getY() - 5, 'l',
-							this, c, s));
+							this, c, s, combo));
+                                        combo++;
+                                        if (combo > 4) {
+                                            combo = 0;
+                                        }
 				}
 				if (!mp.isPowerup()) {
 					c.addFriendly(new Bullet(mp.getX() + 20, mp.getY(), 's',
-							this, c, s));
+							this, c, s, combo));
+                                        combo++;
+                                        if (combo > 4) {
+                                            combo = 0;
+                                        }
 				}
 			}
 		}
@@ -399,14 +408,22 @@ public class Game extends Canvas implements Runnable {
 				shooting = true;
 				if (mp2.isPowerup()) {
 					c.addFriendly(new Bullet(mp2.getX() + 16, mp2.getY() - 5,
-							's', this, c, s));
+							's', this, c, s, combo));
 					c.addFriendly(new Bullet(mp2.getX() + 16, mp2.getY() - 5,
-							'r', this, c, s));
+							'r', this, c, s, combo));
 					c.addFriendly(new Bullet(mp2.getX() - 16, mp2.getY() - 5,
-							'l', this, c, s));
+							'l', this, c, s, combo));
+                                        combo++;
+                                        if (combo > 4) {
+                                            combo = 0;
+                                        }
 				} else if (!mp2.isPowerup()) {
 					c.addFriendly(new Bullet(mp2.getX() + 16, mp2.getY() - 5,
-							's', this, c, s));
+							's', this, c, s, combo));
+                                        combo++;
+                                        if (combo > 4) {
+                                            combo = 0;
+                                        }
 				}
 			} else if (key == KeyEvent.VK_D) {
 				mp.setSpeedX(5);
@@ -420,15 +437,21 @@ public class Game extends Canvas implements Runnable {
 				shooting = true;
 				if (mp.isPowerup()) {
 					c.addFriendly(new Bullet(mp.getX() + 16, mp.getY() - 5,
-							's', this, c, s));
+							's', this, c, s, combo));
 					c.addFriendly(new Bullet(mp.getX() + 16, mp.getY() - 5,
-							'r', this, c, s));
+							'r', this, c, s, combo));
 					c.addFriendly(new Bullet(mp.getX() - 16, mp.getY() - 5,
-							'l', this, c, s));
+							'l', this, c, s, combo));
+                                        if (combo > 4) {
+                                            combo = 0;
+                                        }
 				}
 				if (!mp.isPowerup()) {
 					c.addFriendly(new Bullet(mp.getX() + 16, mp.getY() - 5,
-							's', this, c, s));
+							's', this, c, s, combo));
+                                        if (combo > 4) {
+                                            combo = 0;
+                                        }
 				}
 			}
 		}

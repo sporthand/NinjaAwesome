@@ -15,7 +15,7 @@ public class Bullet extends GameObj implements Friendly {
 
 	private char direction;
 	private int speed = 4; // I put 0 since the swing shall not move
-	private int timer = 0;
+	private int timer = 0, combo;
         private int swingTimer;
 	private boolean hit = false;
 
@@ -33,16 +33,17 @@ public class Bullet extends GameObj implements Friendly {
 	Animation currentAttack; // to show attack for player!!!
 	private int selectPicture =0;
 
-	public Bullet(int x, int y, char direction, Game game, Controller c, Sprites s) {
+	public Bullet(int x, int y, char direction, Game game, Controller c, Sprites s, int combo) {
 		super(x, y);
 		this.game = game;
 		this.c = c;
 		this.direction = direction;
 		this.s = s;
 		this.swingTimer = 0;
+                this.combo = combo;
                 
 		swings = this.s.getBulletSprite();
-		currentAttack= new Animation(5,swings[0],250,250, 4);
+		currentAttack= new Animation(5,swings[0],250,250, 4, combo);
 		e = s.getExplosion();
 		
 		

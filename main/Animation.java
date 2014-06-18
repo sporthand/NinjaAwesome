@@ -14,7 +14,14 @@ public class Animation {
         private double imageWidth = 0;
         
         private BufferedImage img;
-        
+        public Animation(int speed, BufferedImage img, double imageHeight, double imageWidth, int imageNumber, int tempNumber) {
+            this.speed = speed;
+            this.img = img;
+            this.imageHeight = imageHeight; //Height of the image by pixel
+            this.imageWidth = imageWidth;   //Width of the single animation image by pixel
+            this.imageNumber = imageNumber; //The number of animation for the image strip
+            this.tempNumber = tempNumber;   //The actual image we will be showing starting with tempNumber
+        }
         public Animation(int speed, BufferedImage img, double imageHeight, double imageWidth, int imageNumber){
             this.speed = speed;
             this.img = img;
