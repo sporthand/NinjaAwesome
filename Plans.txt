@@ -24,11 +24,193 @@ CodeCane:
 	
   = communication between each characters
   
-  - enemies: 
-    - big boss: ex-girlfriend or ex-boyfriend.
-    -phantom robot that has a cloak and uses a sword
-    - 1st boss: jet pack.
-    - first robot and the most common one. 
+------------------------------------------------------------ enemies: 
+Chapter 1 enemies. Village stage will have houses that ninja can go into.
+
+level 1-3 
+- sword robot 1: found only level 1-3 has 30 health can do 8 damage per hit 
+	 does a 2 hit combo with sword slash
+	
+- glaive robot 1: found only in level 2-3 has 50 health can do 10 dmg per
+	swings a huge slow glaive as an attack. can drop the weapon "Halberd" for glaive which drop rate is 40%
+
+- spear robot 1: found only level 2-3 only has 40 health can do 6 dmg per hit 
+	does a thrust attack for its attack. can drop a "long pole" as a weapon for spears which dropped rate is 40%
+	
+-first boss: Jet pack Joe: 100 health can do 20 dmg from the rush attack, 10 dmg from the punches, and jet bursting 30 dmg from his jetpack. This robot is found at level 1 as the first boss
+	When encounter the boss drops down and then hovers back up. Its attack is punching the ninja and dashing towards it and moving backwards
+
+-second boss: Dual blade Max: 150 health can do 25 dmg per hit found with the sword. found at level 3 as the second boss 
+	 When encountering this boss it will walk slowly towards you and attack you with its combined duo like blade. Its attack is a swing upward and doward.
+
+Chapter 2 enemies: forest stage background will be with a forest like enivorment: 
+
+level 4-6:
+
+- ninja robot: level 4 enemies only has 65 health can do 20 dmg per hit 
+	is a fast robot that uses the Ninjato as a weaopn. 40% chance of ninja getting a Ninjato gear from it
+
+-sword robot II: found level 5-6: has 70 health, 25 dmg per hit
+	an improved sword robot does a 3 hit combo with sword slashs 
+
+-dual wielding sword robot found level 5-6: has 70 heath, 35 dmg per hit.
+	a duo wielding robot does a 6 hit combo with 2 swords can guard attacks
+
+- third boss: Ex girl friend/ boy friend ninja. If a user chooses a female ninja it will fight a male ninja and vice versa. Uses a sword for close range attack, kunai and shuriken for long range
+	The ninja can teleport above the players and does a dive slash that does 20 dmg if player does not dodge it. 10 dmg when throwing shuriken or kunai. 15 dmg when doing a slash towards the ninja
+	found at level 4
+
+- fourth boss: Robotic Enhanced Ninja robot 180 health, 30 dmg per hit if ninja is hit by its sword, 10 dmg if ninja cannot deflect or dodge the shuriken or kunai. found at level 6
+	The ninja robot has the ability to teleport and throw kunai and shuriken at player. If player gets close it will attack them with its Ninjato sword. 
+	
+
+chapter 3 enemies: snow level all stages will have a snow windy background
+
+level 7-9 
+
+-  shield robot: 100 health, 20 dmg, 25 def level 7 only
+	a robot with a shield on one of its hands and a fire cutlass sword on the other. 35% chance of dropping a "shield sword" for a katana weapon or "fire cutlass sword" for dual wileding sword weapon
+
+- sword robot II: same stats as chapter 2 enemies for level 7-8
+
+-dual wielding sword robot: same stats as chatper 2 enemies for level 7-8
+
+-snow spear robot: 80 health, 20% ice boost, 24 def level 9 only
+	a robot made of ice and uses a ice spear to thrust ice dmg at the ninjas. 3% chance of dropping "Spear of freezing death" when players revist the stage after beating the last boss once.
+	fire is its weakness
+	
+-snow glaive robot: 90 health 30% ice boost, 20 dmg level 9 only
+	a robot made of ice and uses a heavy ice Glaive weapon where it will swing at the ninjas. 3% chance of dropping "Glaive of ultimate water" when players revist the stage after beating hte last boss once.
+   	fire is its weakness
+	
+-fifth boss: polar bear robot: 200 health, 35% ice boost, 20 dmg from ice breath attack, 25 dmg if you get hit by its ice claws found at level 9 
+	A robot shaped like a polar bear covered with ice, has a 20% chance of freezing a ninja when using its ice breath attack. Can slash with its claws. Fire weapons and skills are its weakness
+ 
+chapter 4: enemies: volcano like stage 
+
+level 10-12: 
+
+- dual wielding robot II: 130 health, 25 dmg level 10 only
+	a new dual wielding two sword robot that is only found in level 10 only ( has a 3% chance of dropping "sword of fire and light" which can only be dropped when you beat the last boss and you revist the stage.
+
+-fire sword robots: 140 health, 28 dmg and level 10-12
+	a fire robot that uses a fire sword to attack (has a 30% chance of dropping a "flame katana") Ice and water is its weakness
+
+-sixth boss: Fire Dragon robot: 250 health, 40% fire boost. 30 dmg from its flame throwing breath, 25 dmg from its bite, 15 dmg from its tail swoop, 20 dmg from its claws.
+	A Black metal dragon that can uses flames and most of its body to attack the ninja. If the ninja is too far it will use its flame attack. If a ninja is too close it will try to bite it or slash it.
+	If the ninja is running towards the dragon it will use its tail to attack them. water weapons and specials are its weakness.
+
+Chapter 5: graveyard like stage will always be dark and creepy 
+
+levels 13-15
+	
+- haunting shadow robots: 150 health, 30 dmg found at level 13-15.
+	Uses a claw like weapon to attack and hides in shadow like places, if ninja gets too close it will attack. Ninja can damage them if they are invivisble. they are weak to holy specials and weapons
+	
+-repear robot: 160 health, 35 dmg found only at level 14. 
+	robots with a cloak covering them that uses a scythe sword weapon and will swing its scythe at the ninja  ( has a 3% chance of dropping the weapon "Katana of darkness" when players beat the last boss and replay the level"
+
+-seventh boss: reaper robot Boss: 180 health, 40 dmg found only at level 14
+	A cloaked robot that carries the sword Kusanagi. Will run towards the players and try to slash them with darkness attrubute attacks. Can telepoert behind the player and attack them as well. weak to holy weapons and special
+	
+- eighth boss: Vampire robot: 200 health, 50 dmg found only at level 15
+	A vampire looking robot that teleport towards the players and try to suck their blood out for energy. Can use claws to attack. Weakness is holy weapons and holy specials. 	
+	
+chapter 6: robot factory stage has doors so ninja can go inside to get items.  
+
+level 16-18
+
+- Duel wielding sword robot III: 150 health, 35 dmg level 16  only 
+	a advance duel wielding robot in charge of guarding the robot factory has a 3% chance of dropping the "sword of the wind and ice" when you revist the stage after beating the last boss
+
+- spear robot III 140 health, 30 dmg level 16 only 
+	a 3rd generation advance spear robot III that uses fast thrust attack. has a 3% chance of dropping the "spear of strong torrando" when you revist the stage after beating the last boss
+
+- human controlled slave sword female model: 
+	has 200 health, 40 dmg level 17 only can do slashes with sword has 20% chance of dropping "bone sword" and "sexy bone armor"
+
+- human controlled slave duel wielding sword female model:
+	has 200 health 50 dmg level 17 only can do slash with its duel wielding sword and has a 20% chance of dropping "sexy bone armor", "bone high heals", " bone mini skirt" "bone short swords"
+
+- human controlled slave slave spear male model:
+	has 200 health 40 dmg level 17 only can do spear thrust with spear has a 20% chance of dropping "bone armor" and "bone spear" 
+
+- human controlled slave glaive male model:
+	has 200 health 60 dmg level 17 only can do a huge smash attack using a glaive and has a 20% chance of dropping " bone glaive","bone boots", "bone gloves" "bone armor", and "bone ninja helmet" 
+
+
+-super robot: has 220 health 70 dmg level 18 only
+	uses a jet pack and use similar moveset as the first boss uses a rush and punch attacks.
+
+ninth boss: boyfriend/girlfriend controlled slave ninja:
+	has 300 health, 90 dmg with sword attack, 40 dmg per kunai and shuriken for long range for male ninja boss weapon will be a fire katana, for female it will be an ice katana.
+	has 10% chance of freezing and buring players. Ninja can also teleport and suprise players with teleport slashs. 
+
+chapter 7 final chapter: powerplanet stage/underground sercet cave/ open fire.
+
+level 19-22
+
+level 19: human power planet stage
+
+-super sword robot II 
+	has 220 health 70 dmg level 19 only
+	uses a crystal sword as a slash attack with a jet pack thrust move. 15% chance of dropping a "crystal sword"
+
+-super duel wielding robot II 
+	has 210 health 75 dmg level 19 only 
+	uses a crystal twin blades as a slash attack with a jet pack thrust move. 15% chance of dropping a "crystal twin blade" 
+
+level 20: underground of human power planet stage
+
+- super spear robot
+	has 200 health 70 dmg level 20 only 
+	uses a enhanced lighting spear with a jet pack thrust move. weak too earth and ice 15% chance of dropping a "enhanced lighting spear"
+
+- super glaive robot II  
+	has 200 health 90 dmg level 20 only
+	uses a enahnced Glaive of waves as a weapon that will deal water dmg. Even carrying a heavy weapon their slashs are very fast and powerful because of the jet pack has a 15% chance of dropping a "enahnced Glaive of waves"
+
+tenth boss: Reaper Boss 
+	has 340 heatlh, 100 dmg with sword attack uses a fast teleport dark slash that can teleport behind players and uses a scyth like sword, can also throw its scyth like sword at players weak to holy weapons.
+
+level 21 underground cave. A cave filled with wires and dark tunnels 
+	
+- golem robots rock shaped robots 
+	has 300 health 120 dmg uses a rock punch and can shoot rock out of its arms use a rock element based attack. Weak to ice and water.
+	has a 15% chance of dropping golem armor top as well as Glaive of the golems, jade green sword, jade green dagger and Earth spear.
+	has a 3% chance of dropping a "Glaive of mother earth" when revisting the stage after defeating the last boss.
+
+level 22 open field
+
+- Angel robots with swords. 
+	has 350 health 130 dmg has angel like wings and can dive at the ninja uses holy attacks so weakness is dark only. 
+	can also slash swords. 
+	has a 3% chance of dropping katana of light when you revist the stage after beating the last boss.
+
+-final boss:
+	
+
+	
+
+
+
+Elements weakness and strengths:
+
+-Fire is strong against ice and wind but weak to water and earth
+
+-Electricty is strong against water and wind but weak against earth and ice.
+
+-Earth is strong against fire and electricty  but weak against ice, and water.
+
+-Ice is strong against water and electricty but weak too wind and fire.
+
+-Water is strong against fire and earth but is weak to ice, wind and electricty
+
+-Wind is strong against water, ice but weak against fire and elecrity. 
+
+-darkness is strong against holy and weak against it as well. 
+
+-holy is strong against darkness but weak against it as well.
 
 
 Ninja stats points:
@@ -45,14 +227,26 @@ Game Description:
   - player vs player
   - rush mode
   
-- weapons with all three combo:
+  
+------------------------------------------------<Rush mode> (start)
+A Single player or multi-players suppose to play the rush mode after each stage complete.
 
-  - kunai knife
-	- using a kunai knife as a close range weapon and a long range weapon
-	- 4 combo moves 
-	- combo 5: user can choose between throwing 3 kuna knives with less damage or throwing one with more damage.
-	- combo 6: user can choose between ninja teleporting behind enemy and slashing them that does little damage, or doing a kuna dash at the enemy.
-	- combo 7: user can choose between ninja doing a dive slash or teleporting behind enemy and throwing a kunai knife at enemy that does little damage.
+- the screen movement has to be insanely fast from right to left.
+- the player's running animation's speed is insanely fast unless he or she does not equip with jet pack.
+- some stage shall require jetpack depending on map terrain.
+- the robot suppose to spawn from right edge of the screen.
+- some stage suppose to spawn robot from left edge of the screen which equip with jet pack as player do.
+- player suppose to attack robots while they are on rush mode stage.
+- Player shall eat food to gain health to sustain playing life.
+- player shall use special attacks more often than normal stages.
+- combo kill count shall be available (first kill, double kill, trible kill, multi kill, ultra kill, rampage, unstoppable, monster kill, god like, wicked'n seek, godlike.)
+- player shall avoid any trap during the rush mode or the player health penalized and reset the combo kill count to 0.
+- boss shall be spawned in some rush mode stages.
+- the rush mode shall be end after the time limit.
+- after the rush mode, the fortune cookie shall be available to unlock the random item based on the combo kill.
+------------------------------------------------<Rush mode> (end)  
+  
+- weapons with all three combo:
 
   - katana
 	- two handed sword, better range then two swords but as oppose to spears has less range.
@@ -76,7 +270,7 @@ Game Description:
 	- combo 5 user can choose between a swing that causes rock to come out of the ground or a 5th swing.
 	- combo 6 user can choose between a swing that goes downward with wide angle or ground smash attack that causes more rocks to come out.
 
-  - two swords 
+  - dual wielding swords:
 	-uses two swords but less range as oppose to the katana/long katana can do more combos.
 	-3 combo moves
 	- combo 4 user can choose between throwing one of the sword in a stright line, or doing an extra combo slash.
@@ -188,7 +382,7 @@ has a 12% of stunning enemy except bosses.
 <level 3> holy strike slash: ninja does a slash that moves in a stright line which comes out of the sword.
 <level 4> holy sword: ninja does 2 slashs that moves in a stright line. which comes out of the sword.
 
------------------------<two swords special moves> 
+-----------------------<dual wielding swords special moves> 
 
 1st  special move:
 <level 1> Lion dive: a orange sword fire dive using two swords.
@@ -214,30 +408,6 @@ has a 12% of stunning enemy except bosses.
 <level 3> holy stealth rush: ninja teleports behind the enemy and slashes them twice with both swords.
 <level 4> holy stealth quick slash: ninja teleports and slashs all nearby enemys with both swords.
 
-----------------------------------<kunai knife special moves>:
-1st special move: 
-<level 1> shadow throw: ninja throws a darkness element kunai knife at an enemy
-<level 2> shadow sneak throw: ninja throws a darkness element kunai at an enemy which hits then from behind.
-<level 3> shadow kunai confusion throw: ninja throws a kunai knife at ane enemy which turns into smoke and reappears in the back or front of the enemy. 
-<level 4> shadow kunai decoy throw: ninja throws a kunai knife at an enemy which turns into smoke and reappears both in the front and back of the enemy where one knife is a fake and the other is real.
-
-2nd special move: 
-<level 1>  kunai tiger fire thrust: ninja does a thrust slash with kunai knife at the enemy.
-<level 2> kunai tirger flaming strike: ninja does a thrust slash with kunai knife at the enemy with bigger flames: 2% chance of burning an enemy.
-<level 3> kunai tiger flaming claw: ninja does a thrust slash with kunai knife at the enemy with bigger flames then level 2: 8% chance of burning an enemy
-<level 4> kunai tiger bite: ninja does a yellow flame slash with kunai knife the thrust slash looks like a yellow tiger and is bigger then level 3. has a 12% change of burning an enemy.
-
-3rd special move: 
-<level 1> Kunai earth summon: ninja jumps up and throws a kunai knife at the enemy, if kunai misses enemy a ground version of the kunai knife will hit the enemy.
-<level 2> kunai earth summon perfect: ninja jumps up and throws a kunai knife at the enemy, if kunai hits enemy a ground version of that kunai knife will still come up and hit the enemy.
-<level 3> kunai earth double summons: ninja throws kunai knife and 2 kunai comes out of the ground under the enemy.
-<level 4> kunai earth ground summon: ninja throws kunai knife and 3 kunari earth type knifes comes out of the ground.
-
-4th special move: 
-ice decoy: ninja turns into ice and teleports to the enemy with a random chance of being in front of the enemy or behind them.
-ice decoy advance: ninja turns into ice and teleports behind the enemy.
-ice decoy suprise: ninja turns into ice and teleports and slashes the enemy.
-ice decoy perfect slash: ninja teleports to the next 3 enemies and slashes all 3 of them.
 
 ------------------------<spear special moves>:
 1st Special move:
@@ -247,10 +417,10 @@ ice decoy perfect slash: ninja teleports to the next 3 enemies and slashes all 3
 <level 4> lighting spear snake thrust: ninja does a fast lighting based thrust that last longer then level 3 where its spear looks like a snake. 12% chance of stunning an enemy. 
 
 2nd specal move:
-<level 1> flaming boomrang spear attack: ninja throws its firy spear at an enemy.
-<level 2> flaming boomrang spear attack extended: ninja throws its firy spear at an enemy which has longer range then level 1. 2% chance of burning an enemy.
-<level 3> flaming boomrang spear cartwheel: ninja throws its firy spear at an enemy which is wider then level 2. 8% chance of burning an enemy.
-<level 4> flaming boomrang spear omega: ninja throws its firy spear at an enemy which does a cart wheel around the screen. 12% chance of burning an enemy.
+<level 1> ice boomrang spear attack: ninja throws a ice spear at an enemy.
+<level 2> ice boomrang spear attack extended: ninja throws a ice spear at an enemy which has longer range then level 1. 2% chance of burning an enemy.
+<level 3> ice boomrang spear cartwheel: ninja throws its ice spear at an enemy which is wider then level 2. 8% chance of burning an enemy.
+<level 4> ice boomrang spear omega: ninja throws its ice spear at an enemy which does a cart wheel around the screen. 12% chance of burning an enemy.
 
 3rd special move: 
 <level 1> Earth spear uppercut: ninja does an uppercut with spear using earth element.
@@ -264,27 +434,219 @@ ice decoy perfect slash: ninja teleports to the next 3 enemies and slashes all 3
 <level 3> torrando spin force: ninja does a wind element spin that hits enemies around it and creates a bigger torrando.
 <level 4> torrando spin ultimate force: ninja does a wind element spin that hits enemies around it and last longer then the other 3 levels.  
 
+--------------------<glaive special moves>
+1st special move: 
+<level 1> Earth crush: Ninja swings and smashs the galive into the ground creating 2 spikes to come up in front of the ninja.
+<level 2> mud slide: Ninja smash the ground with galive to create a small mud slide that damages the enemies in front of them.
+<level 3> Earth bounce: Ninja smash the ground with galive and sends the enemy flying high in front of them.
+<level 4> Earthquake: Ninja smash the ground with galive to create a ground shockwave that damages all enemies in a single line in front of ninja.
+
+2nd special move: 
+<level 1> wind thrust: ninja does a slow thrust in front of them with galive which has a lot of force that pushs the enemy back.
+<level 2> shockwave: ninja does a slow thrust in front of them which shoots a wind shockwave towards the enemy. 
+<level 3> super shockwave: ninja does a slow thrust in front of them which shoots two wind shockwaves towards the enemy.
+<level 4> Force: ninja produces one huge wind shockwave that deals more damage then level 3.
+
+3rd special move: 
+<level 1> holy sneak attack: ninja teleports in a white light behind enemy and does a powerful slash at an enemy. 
+(note this wepaon has only 1 level seeing how the glaive is the strongest weapon and would be too powerful if I let it level up seeing how its a teleportation move)
+
+4th special move: 
+<level 1> water slash: ninja glaive turns into water when it slashs.
+<level 2> water cut: ninja does a slash that turns into water which can move in a short distance in front of them.
+<level 3> water double cut: ninja does a slash which turns into water which produces a X like slash that attacks any enemies in front of them in a short distance.
+<level 4> water ultra slash: ninja does a slash which turns into water which produces a 6 mark slash that attacks any enemies in front of them in a medium distance.
+
+
+-weapons: 
+
+notes:
+GM means only one of us the people like Wing, Jung, David, Lizer and Clifford can have these weapons and its one of a kind so you guys make one.
+speed swing: how fast the weapon can be swung by ninja: 100% is the max and impossible for a player to have
+Attack: the damage the weapon has 100 is the most damage the game will allow. 
+crit chance: the chance of a crit to happen. The higher the percentage is the chance of a crit happening 
+(note 100% does not = 100% crit always need to find a good math equation for this and crit attack is always double the attack damage you do)
+the () next to the weapon is where the weapon can be be bought or found.
+The quotes next to the weapon is the weapon info of that weapon.
+
+--------------------------------katana:
+-Red Dragon long sword: +100% fire boost + 100 attack and 80% speed swing 80 crit. "A blood red katana that is long which burns with the red flames of a dragon." -Wing's choice of weapon ^_^.
+
+-katana: +5 attack, 5% speed swing 2% crit (ninja starts out with this weapon) "a standard sword used by the samurai"
+
+-long sword: +8 attack, 8% speed swing, 3 crit chance (can be brought from item shop for 200 in game cash or be dropped by a sword robot in level 1 or 2 or 3 chapter 1, 30% chance of drop)  " a longer sword that is longer then a katana"
+
+- steel katana: +8 attack, 9% speed swing, 5 crit chance ( can only be brought from item shop for 400 in game cash and is shown at the item shop after chapter 1) " a katana made of stronger metel"
+
+- Ninjato: +6 attack, 10% speed swing, 4 crit chance ( can only be found by defeating a ninja robot in level 4 chapter 2, 40% chance of being dropped.) "a short sword used by a true ninja for single or double swords" 
+
+- silver katana: +10 attack, 9% speed swing, 8 crit chance ( can be bought at the shop after level 5 for 1000) " a sword made from silver. who thought of making a sword out of valueable metal would make a good weapon"
+
+- golden katana: + 12 attack, 12% speed swing, 10 crit chance ( can be bought at the shop after second boss for 2000)  " a sword made of gold, again who thought it was a good idea to turn money into a weapon?" 
+
+- shield sword: + 15 attack, 6% speed swing, 11% crit chance ( can be found in level 7 by fighting shield robots 35% chance of being dropped by them) " a sword that is like a shield, well you can't use this as a shield like the robot and its heavy so good luck young ninja"
+
+- robotic shadow sword: +10% shadow boost, 20 attack, 18% speed swing, 15 crit chance ( can be bought only at item shop for 4000 in game cash and is unlocked after beating 3rd boss) " a weird enhanced sword made from robotic parts with their souls infused into the sword. The question is when did robots even have a soul?"
+
+- Electric sword: + 10% electricity boost, 20 attack, 15% speed swing, 20 crit chance ( can be bought only at item shop for 5000 in game cash and is unlocked after beating the 3rd boss) " a electirc katana, be sure to only touch the rubber handle and not the blade or else it will shock you!!!"
+
+- ice sword: +15% ice boost, 20 attack, 15% speed swing, 20 crit chance ( can be bought at shop after fighting 5th boss for 8000 in game cash) " a sword made of frozen ice, why would you buy a sword made out of ice its going to melt you wasted 8000 in game cash"
+
+- flame katana: +10% fire boost, 25 attack, 20% speed swing, 20 crit chance ( can only be found by defeating a fire sword robot in level 10-12, 30% chance of being dropped) " a burning orange sword with the power of the flames"
+
+- Kusanagi: +20% shadow boost, 30 attack, 20% speed swing, 20 crit chance ( only dropped by reaper boss aka cloaked robot at level 14 which is a mid boss) " a sword said to be found inside the body of the eight headed serpent known as Yamata no Orochi "
+
+- meteor sword: + 35 attack, 30% speed swing, 29 crit ( can be brought at shop after the 8th boss for 10000 in game cash) " a black sword made of rare material from the stars. Looks like a regular katana sword painted black"
+
+- bone sword: +38 attack, 35% speed swing, 31 crit ( can only be found in level 17 after saving a katana wielding human controlled robot 20% chance of being dropped) " a sword used by human controlled robot slave. You think its a sword made using bones from a  human but its not, dont know why they called it a bone sword"
+
+- crystal sword: + 40 attack, 40% speed swing, 40 crit ( can only be found in level 19 by defeating a super sword robot II 15% of being dropped) " a sword made from crystals. How can a crystal sword be so powerful its made up of crystals that can break easily" 
+
+- enhanced flame sword: + 45 fire boost, + 50 attack, 50% speed swing, 50 crit ( can be bought at the store after the 8th boss for 20000 in game cash) " a sword made of enahnced flames. Seriously don't touch the flames on the sword it can burn easily"
+
+- enhanced ice sword: + 40 ice boost, + 45 attack, 45% speed swing, 45 crit ( can only be bought at store after the 8th boss for 20000 in game cash) "sword made up colder ice. I don't know why people keeping making ice swords when they can melt easily"
+
+- Jade green sword: + 55 attack, 50% speed swing, 52 crit ( can be found only be found in stage 21 by fighting green golem robots which has a 10% of being dropped) " A sword that emits a green jade light cloaked in a rock like blade. Must be fake jade if it can glow in the dark"
+
+- Katana of darkness: + 70 darkness boost + 70 attack, 60% speed swing, 60 crit ( can be found in level 14 by a repear robot not the repear boss aka cloaked robot has a 3% of being dropped by them, can only be found after beating the last boss) "A sword that is made from darkness itself a very rare weapon. One of the two hidden weapons in the game congrats in finding it" 	
+
+- Katana of Light: + 70 holy boost + 70 attack, 60% speed swing, 60 crit ( can be found in level 20 by a angel robot has a 3% of being dropped by them, can only be found by them after beating the last boss) " a sword made from light itself a very rare weapon. One of the two hidden weapons in the game, congrats in finding it" 
 
 
 
-	
-  
-- clothing: 
+-------------------------------dual wielding swords:
+- Wakizashi: + 8 attack, 8% speed swing, 3 crit ( can be found in your inventory after level 1) " a short sword used by the samurai" 
+
+- Cutlass sword + 10 attack, 10% speed swing, 5 crit ( can be bought from the shop after level 1 for 500 in game cash) " A short saber like sword that can be swung fast"
+
+- Ninjato: +6 attack, 10% speed swing, 4 crit chance ( can only be found by defeating a ninja robot in level 4 chapter 2, 40% chance of being dropped.) "a short sword used by a true ninja for single or double swords" 
+
+- Platnium cutlass sword: + 15 attack, 15% speed swing, 15 crit ( can only be bought after beating the 2nd boss for 2200) " a sword made of plantinum. Who thought it was a good idea to make a sword out of plantinum?"
+
+- fire cutlass sword: + 15% fire boost, + 22 attack, 20% speed swing, 20 crit chance (can only be found by fighting a shield robot in level 7 has a 35% of being dropped by them) " A short sword with the power of the earth. Hmm sword made up of dirt and mud I would love to see how this turns out"
+
+- robotic light wakizakshi: + 15% holy boost + 24 attack, + 20% speed swing, 18 crit chance ( unlocked after 4th boss in the shop for 6000 in game cash) " a short sword with the power of shadow infused with the robots that were defeated by the ninjas. The sword has a mind of its own"
+
+- ice boomrang sword: +15% ice boost, +28 attack, +25% speed swing, 20 crit chance ( unlocked at shop after fighting 5th boss for 9000 in game cash) " a boomrang swords made up of ice. why would you carry use a boomrang as a sword when its made of ice as well"
+
+- meteor short swords: + 39 attack, 37% speed swing, 28 crit ( unlocked at the shop after defeating 8th boss for 12000 in game cash) " a pair of swords made from a meteor. I still think it looks like a sword that was pained black"
+
+- bone short swords:  +39 attack, 37% speed swing, 30 crit ( can only be found in level 17 after saving a dual wielding human controlled robot 20% chance of being dropped) " a sword made of bones of something. Don't worry the sword isn't made from human bones"
+
+- crystal twin blade: + 42 attack, 41% speed swing, 42 crit ( can only be found in level 19 by defeating a super duel wielding swords robot II) " 2 swords from crystals. How can crystals be made into a weapon for offensive person?"
+
+- moon light twin swords: + 50% holy boost, + 48 attack, 48% speed swing, 48 crit ( can only be bought at store after defecting the 9th boss for 22000 in game cash) " twin swords that shine bright as the moon light" 
+
+- Jade green daggers: + 54 attack, 50% speed swing, 50 crit ( can only be found by defeating a green golem robot in stage 21. 15% chance of being dropped) " a pair of short swords made of jade. Dont know how this sword can glow"
+
+- sword of fire and light: +25 holy and fire boost +65 attack, 65% speed swing, 60 crit ( can only be found in level 10 after beating the last boss has a 3% chance of being dropped from a dual wielding sword robot II) " a pair of swords where one has the power of fire while the other has the power of light which bright up our future" 
+
+- sword of the wind and ice: + 25 wind and 25 ice damage +65 attack, 65% speed swing, 60 crit ( can only be found in level 16 after beating the last boss and has a 3% chance of being dropped by duel wielding robot III) " a pair of swords where one has the power of ice and the other has the power of wind"
+
+
+------------------------------------- spear
+- spear: +5 attack, 5% speed swing, 4 crit ( can be found in your inventory after level 1) " a long spear has good range"
+
+- iron spear: + 10 attack, 8% speed swing, 5 crit ( can be bought from the shop after level 1 for 500 in game cash) " a spear made out of iron"
+
+- long pole: + 12 attack, 10% speed swing, 6 crit ( can be found randomly by a spear robots in level 2-3, has a 40% chance of being dropped) " a long pole that can be used as a weapon. better stats then a spear but has not sharp edge how is this possible?"
+
+- steel spear: 14 attack, 13% speed swing, 8 crit ( unlocked after the second boss in the shop for 700 in game cash) " a spear made of steel" 
+
+- robotic lighting spear: + 15% electric boost, + 16, attack + 20% speed swing, 10 crit ( unlocked at shop after the 4th boss for 4000 in game cash) " a enhanced robotic spear infused with lighting. Danger do not touch or else it will shock you"
+
+- Spear of wind: + 15% force boost, + 23 attack, + 25% speed swing, 18 crit ( unlocked after fighting 5th boss in the shop for 7000 in game cash) " a spear infused with the power of the wind"
+
+- meteor spear: + 34 attack, 34% speed swing, 25 crit ( unlocked at the shop after defeating the 8th boss for 12000 in game cash) " a spear made from the ore of a meteor" 
+
+- Bone spear: +39 attack, 37% speed swing, 26 crit ( can only be found in level 17 after saving a spear wielding controlled human has a 20% chance of being dropped) " a spear made of bones. No its not made from human bones"
+
+- enhanced lighting spear:  + 45 lighting + 42 attack, 39% speed swing, 33 crit ( can only be found after defeating a super spear robot II in level 20 has a 15% chance of being dropped) " a enhanced version of a lighting spear. Do no touch or you will be shocked"
+
+- Tonobogiri: + 47 attack, 42% speed swing, 36 crit ( unlocked after beating the 9th boss in the game for 23000 in game cash) " a legendary Japanese spear that was able to cut a dragonfly into two when it landed on its blade"
+
+- Earth spear + 45 earth boost, 55 attack, 50 speed% speed swing 50 crit ( can only be found after fighting a golem robot in level 21 has a 15% chance of being dropped by them) " a rock shaped like a spear"
+
+- Spear of freezing death + 70 ice boost, 70 attack, 65% speed swing, 62 crit ( can only be found after beating the last boss at level 9 from a snow spear robot. has a 3% chance of being dropped) " a spear that is so cold and so legendary very hard to find congrats on finding it"
+
+- spear of strong torrando + 70 wind boost, 70 attack, 65% speed swing, 62 crit ( can only be found after beating the last boss at level 16 has a 3% chance of being dropped by a spear robot III).  " a spear with the power of the wind, a legendary weapon very hard to find congrats on finding it"
+
+----------------------------------- glaive
+
+- Guan Yu's Treasure: + 100 earth boost  + 100 attack, 60% swing speed, 98 crit (a Glaive that can cause earthquake and do a lot of damage powered by the earth. A very heavy weapon that is a symbol of it's symbol of loyalty
+and justice) Jung's personal weapon GM
+
+-glaive: +8 attack, 2% speed swing, 8 crit ( can be found in your inventory after level 1) "a single edge blade attach to a pole the blade is bigger and stronger then a spear but ninja's will have a hard time swing it.
+
+- Iron Glavie: +12 attack, 4% speed swing 10 crit ( can be bought at the shop after level 1 for 600 in game cash)  "a glave made of iron" 
+
+- Halberd: + 15 attack, 6% speed swing 12 crit ( can be found  randomly by glaive robot I in level 2-3, has a 40% chance of being dropped) "A weapon that was made to adapt to comeback any other weapons such as spears, swords and any other weapons"
+
+- steel Glavie: + 18 attack, 8% speed swing, 14 crit ( unlocked after the second boss in the shop for 800 in game cash) " a glavie made of steel"
+
+- robotic holy glaive: +15% holy boost, +20 attack, 12% speed swing, 16 crit ( unlocked at shop after the 4th boss for 5000 in game cash) " an enhanced robotic glaive with holy powers. What kind of element is holy?"
+
+- Glaive of waves: + 15% water boost, +28 attack, 15% speed swing, 19 crit ( unlocked after fighting the 5th boss for 8000 in gmae cash) " a glaive with the elements of the water"
+
+- meteor Glaive: + 38 attack, 25% speed swing, 29 crit ( unlocked after fighting the 8th boss for 13000 in game cash) " a glaive made from an ore of a meteor"
+
+- bone glaive: + 45 attack, 30% speed swing, 35 crit ( dropped when you save a human controlled glaive slave in level 17 has a 20% chance of being dropped) "a Glaive its made of bones. No its not made out of human bones don't ask"
+
+- enahnced Glaive of waves: + 45 water boost + 55 attack, 35% speed swing, 40 crit ( can be found after defeating a super glaive robot II in level 20 has a 15% chance of being dropped). " a enhanced water glaive with more water boost"
+
+- Naginata: + 60 attack, 37% speed swing, 44 crit ( can be bought at shop after beating the 9th boss in the game for 27000 in game cash) " a japanese style glavie with a sword like blade at the end of it"
+
+- Glaive of the golems: + 45 earth boost, 65 attack, 40% speed swing, 48 crit ( can only be found at level 21 by fighting a golem robot in level 21 has a 15% chance of being dropped) " a rock shaped glaive that was forged by the golems you defeated".
+
+- Glaive of ultimate water: + 70 water boost, 80 attack, 55% speed swing, 68 crit ( can only be found after defeating the last boss and in level 9 from a snow glave robot has a 3% chance of being dropped) " a legendary weapon with the power of water, congrats player for finding it"
+
+- Glaive of mother earth: +70 earth boost, 80 attack, 55% speed swing, 68 crit ( can only be found after defeating the last boss and in level  21 from a golem robot has a 3% chance of being dropped) " a legendary weaopn with the power of the earth itself, congrats player for finding it"
+
+
+
+
+
+
+--------------------------------------------------------------------------------------- clothing: 
 definition F means female only
 	   M means Male only 
 	   OS means online store only item
 	   colors of the gear will be put next to the gear name
+	   loot adds more chance of in game items to be found from enemies
+	
   - top:
-	-Ninja suit(black):
+	-Ninja suit(black): (ninja starts out with this outfit) male and female 
 	-(stats) + 5 def, + 5 attack, + 5 speed, +5 health, +2% chance of loot
 
+	- Ninja robe (black = +10 darkness res, blue +5 ice and water res, green + 10 force res, yellow +elec res) male and female 
+	(stats) + 8 def, + 8 attack,  + 4 health, +5% chance of loot ( sold at item store after level 3 for 300 in game cash)
+
+	- Ninja armor ( black, blue) male and female
+	(stats) + 12 def, + 10 attack,  + 8 health, +3% chance of loot ( sold at item store after second boss for 500 in game cash)
+
+	- ninja robot armor 1 (dark grey) male and female armor. Male will drop only to male ninja and female to female ninja
+	stats: +14 def, +12 attack,  + 10 health, +5% chance of loot ( dropped by any of the sword, dual wielding, spear and glaive robots in level 3-5 has a 20% chance of being dropped)
+
+	- Ninja Dress ( red, black, blue, white) F only
+	(stats) +6 def, +8 attack,  +4 health, +7% chance of loot ( sold at item store after second boss for 400 in game cash female gear only)
+
+	- bone armor ( white) Male armor only
+	(stats) +36 def, + 20 attack, + 25 health) ( can be found in level 17 from any of the human controlled slaves has a 20% chance of being dropped for male ninja)
+	
+	-sexy bone armor (white) Female armor only
+	(stats) +36 def, +20 attack, +25 health) (can be found in level 17 from any of the female human controlled slaves has a 20% chance of being dropped for female ninja)
+	
+	- rock armor: (brown) male and female only
+	(stats) +50 def, +30 attack, +25 health) (can be found in level 21 from the golem robots has a 15% chance of being dropped),  
+
 	-Stealth suit(black or white): 
-	(stats)+10 elemental damage, +20 def, + 20 health, +2% loot +20 speed (set boost wearring  top, head, shoes, mask, pants gives + 20 shadow boost) OS gear only!
+	(stats)+10 elemental damage, +20 def, + 20 health, +2% loot  (set boost wearring  top, head, shoes, mask, pants gives + 20 shadow boost) OS gear only!
 	
 	-Red t-shirt: 
-	(stats) +20 fire boost damage, +20 def, +20 health, +1% loot. OS gear only!
+	(stats) +20 fire boost and + 20 fire res, +20 def, +20 health, +1% loot. OS gear only! (boost increase user attack by 20 and crit by 10 when using a katana)
 	
-	- magnatic suit: weapon return when a player do range attack
+	- magnatic suit:
+	(stats) +20 earth boost, +20 def, +20 health, +5% loot (weapon return when a player do range attack it will return the shuriken and kunai after its thrown.) 
 	
 	- tank top F only:
 	(stats) + 20 ice damage, +20 def, +20 health, +1% loot. OS gear only!
@@ -304,8 +666,21 @@ definition F means female only
 	
 	- stealth head garb (black or white)
 	(stats)+ 3 elemental damage, +3 def, +3 health (set boost wearring  top, shoes, head, face pants gives + 20 shadow boost) OS store only!
+
+	- cat ears ( black or white) 
+	(stats) +3 def, +2 health OS store only
+	
+	- fox ears (orange, white) 
+	(stats) + 3 def, + 2 health OS store only
+
+	-  bone helmet ( white) 
+	(stats) + 10 health, +5 attack, +5 health) ( can be found in level 17 from any of the male human  controlled. 
+	
+-gloves:
+	bone gloves: only found in level 17. 
+	
 	(more to come)
- - face:
+- face:
 	- ninja mask: (black)
 	(stats) +2 attack, +2 def, + 1 speed (ninja starts out with this suit)
 	
@@ -327,7 +702,10 @@ definition F means female only
 
 - pants:
 	-ninja pants (black)
-	(stats) 
+	(stats)
+
+	-bone skirt female only ( white) 
+	+20 def, 10 health, +10 attack 
 	-stealth pants(colors: black or white) 
 	(stats)+ 10 all elemental damage, +10 def, +10 speed, +10 hp. (set boost wearring  top, shoes, head, mask, face pants gives + 20 shadow boost) OS store only!
 	
@@ -336,12 +714,20 @@ definition F means female only
 	
 	- cowboy pants (brown) + 15 earth damage and 5 ranage damage. OS store only!
    
--shoes:
+-shoes: (note speed is how fast the gear will make the ninja run)
 	- ninja sandals - +2 attack,+1 def,+1 speed. ninja starts out with this outfit
+	
 	- stealth shoes(black or white): 
 	(stats) +2 elemental damage, +2 def,+ 2 health, +3 speed. OS store only!
+	
 	- red sneakers - 
 	(stats) +5 fire boost damage, +3 def, +2 health, + 1 speed. OS store only!
+	
+	cat shoes (white, black) 
+	(stats) +3 def, +2 health, +8 speed OS store only!
+	
+	fox shoes ( orange, black )
+	(stats) +3 def, +2 health, +8 speed OS store only!
 	
   .
 	
@@ -359,10 +745,10 @@ definition F means female only
 	- right-arrow+ special button
 	- special button
 	
-<Usuable Items>
+<Usuable Items> can found from breaking creates and boxes
   - can equip three usuable item
-    - healing items
-    - recover mana
+    - healing items: sushi, bento, ramen, rice ball. 
+    - recover mana: pills, energy drinks, 
     - perk
 	  - 2X damage
 	  - invincibility
@@ -423,6 +809,3 @@ Background Music:
   
 
 
-Levels: 
-
-Level 1: 
