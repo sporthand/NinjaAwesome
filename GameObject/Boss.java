@@ -66,13 +66,13 @@ public class Boss extends GameObj implements Hostile {
 				setTimer(0);
 				// 1P
 				if (game.getState() == game.getState().GAME) {
-					game.getPlane().setScore(game.getPlane().getScore() + 150);
+					game.getNinja().setScore(game.getNinja().getScore() + 150);
 				}
 				// 2P
 				if (game.getState() == game.getState().MULTI) {
-					game.getPlane().setScore(game.getPlane().getScore() + 150);
-					game.getPlane2()
-							.setScore(game.getPlane2().getScore() + 150);
+					game.getNinja().setScore(game.getNinja().getScore() + 150);
+					game.getNinja2()
+							.setScore(game.getNinja2().getScore() + 150);
 				}
 				c.removeHostile(this);
 			}
@@ -139,16 +139,16 @@ public class Boss extends GameObj implements Hostile {
 			// SHOOTING AI
 			if (ticks % 40 == 0) { // this might be helpful for delay!
 				if (r.nextInt(2) == 1) {
-					c.addHostile(new EnemyBullet(this.xLoc - 40,
+					c.addHostile(new EnemyAttack(this.xLoc - 40,
 							this.yLoc + 50, this.bulletSpeed + 1, this.game, this.c,
 							this.s));
-					c.addHostile(new EnemyBullet(this.xLoc - 20,
+					c.addHostile(new EnemyAttack(this.xLoc - 20,
 							this.yLoc + 50, this.bulletSpeed + 1, this.game, this.c,
 							this.s));
-					c.addHostile(new EnemyBullet(this.xLoc + 20,
+					c.addHostile(new EnemyAttack(this.xLoc + 20,
 							this.yLoc + 50, this.bulletSpeed + 1, this.game, this.c,
 							this.s));
-					c.addHostile(new EnemyBullet(this.xLoc + 40,
+					c.addHostile(new EnemyAttack(this.xLoc + 40,
 							this.yLoc + 50, this.bulletSpeed + 1, this.game, this.c,
 							this.s));
 					if (r.nextInt(3) == 1) {
@@ -163,7 +163,7 @@ public class Boss extends GameObj implements Hostile {
 
 			// COLLISSION WITH BULLETS
 			for (int i = 0; i < game.fl.size(); i++) {
-				Bullet tempFriend = (Bullet) game.fl.get(i);
+				Attack tempFriend = (Attack) game.fl.get(i);
 				if (Physics.collision(this, tempFriend)) {
 					// 1P
 					if (game.getState() == game.getState().GAME) {

@@ -64,8 +64,8 @@ public class Game extends Canvas implements Runnable {
 			BufferedImage.TYPE_INT_RGB);
 
 	// GAME OBJECTS
-	private MyPlane mp;
-	private MyPlane mp2;
+	private MyNinja mp;
+	private MyNinja mp2;
 	private Controller c;
 	private ScoreBoard sb;
 	// private Background gb;
@@ -95,8 +95,8 @@ public class Game extends Canvas implements Runnable {
 
 		}
 		sb = new ScoreBoard(30, 0, 3, 0, this, s);
-		mp = new MyPlane(WIDTH / 4 + 100, HEIGHT / 4 + 200, this, c, s);
-		mp2 = new MyPlane(WIDTH - 100, 500, this, c, s);
+		mp = new MyNinja(WIDTH / 4 + 100, HEIGHT / 4 + 200, this, c, s);
+		mp2 = new MyNinja(WIDTH - 100, 500, this, c, s);
 		c.spawnEnemy(enemy_count);
 		
 		fl = c.getFriendly();
@@ -195,11 +195,7 @@ public class Game extends Canvas implements Runnable {
 					bossSpawn = false;
 					System.out.println("BOSS HAS SPAWNED!");
 					c.addBoss(); // boss spawned at this source code!
-				}
-
-				if (ticks % 1000 == 0) {
-					c.addNeutral(new PowerUp(c.r.nextInt(670), -15, this,
-							this.s));
+			
 				}
 				if (ticks % 1500 == 0) {
 					c.addNeutral(new Life(c.r.nextInt(670), -64, 1, this, c, s));
@@ -225,10 +221,7 @@ public class Game extends Canvas implements Runnable {
 					System.out.println("BOSS HAS SPAWNED!");
 					c.addBoss();
 				}
-				if (ticks % 1000 == 0) {
-					c.addNeutral(new PowerUp(c.r.nextInt(670), -15, this,
-							this.s));
-				}
+			
 			}
 
 			ticks++;
@@ -373,11 +366,11 @@ public class Game extends Canvas implements Runnable {
 			if (key == KeyEvent.VK_SPACE && !shooting) {
 				shooting = true;
 				if (mp.isPowerup()) {
-					c.addFriendly(new Bullet(mp.getX() + 16, mp.getY() - 5,
+					c.addFriendly(new Attack(mp.getX() + 16, mp.getY() - 5,
 							's', this, c, s, combo));
-					c.addFriendly(new Bullet(mp.getX() + 16, mp.getY() - 5,
+					c.addFriendly(new Attack(mp.getX() + 16, mp.getY() - 5,
 							'r', this, c, s, combo));
-					c.addFriendly(new Bullet(mp.getX(), mp.getY() - 5, 'l',
+					c.addFriendly(new Attack(mp.getX(), mp.getY() - 5, 'l',
 							this, c, s, combo));
                                         combo++;
                                         if (combo > 4) {
@@ -385,7 +378,7 @@ public class Game extends Canvas implements Runnable {
                                         }
 				}
 				if (!mp.isPowerup()) {
-					c.addFriendly(new Bullet(mp.getX() + 20, mp.getY(), 's',
+					c.addFriendly(new Attack(mp.getX() + 20, mp.getY(), 's',
 							this, c, s, combo));
                                         combo++;
                                         if (combo > 4) {
@@ -407,18 +400,18 @@ public class Game extends Canvas implements Runnable {
 			} else if (key == KeyEvent.VK_SPACE && !shooting2) {
 				shooting = true;
 				if (mp2.isPowerup()) {
-					c.addFriendly(new Bullet(mp2.getX() + 16, mp2.getY() - 5,
+					c.addFriendly(new Attack(mp2.getX() + 16, mp2.getY() - 5,
 							's', this, c, s, combo));
-					c.addFriendly(new Bullet(mp2.getX() + 16, mp2.getY() - 5,
+					c.addFriendly(new Attack(mp2.getX() + 16, mp2.getY() - 5,
 							'r', this, c, s, combo));
-					c.addFriendly(new Bullet(mp2.getX() - 16, mp2.getY() - 5,
+					c.addFriendly(new Attack(mp2.getX() - 16, mp2.getY() - 5,
 							'l', this, c, s, combo));
                                         combo++;
                                         if (combo > 4) {
                                             combo = 0;
                                         }
 				} else if (!mp2.isPowerup()) {
-					c.addFriendly(new Bullet(mp2.getX() + 16, mp2.getY() - 5,
+					c.addFriendly(new Attack(mp2.getX() + 16, mp2.getY() - 5,
 							's', this, c, s, combo));
                                         combo++;
                                         if (combo > 4) {
@@ -436,18 +429,18 @@ public class Game extends Canvas implements Runnable {
 			} else if (key == KeyEvent.VK_SHIFT && !shooting) {
 				shooting = true;
 				if (mp.isPowerup()) {
-					c.addFriendly(new Bullet(mp.getX() + 16, mp.getY() - 5,
+					c.addFriendly(new Attack(mp.getX() + 16, mp.getY() - 5,
 							's', this, c, s, combo));
-					c.addFriendly(new Bullet(mp.getX() + 16, mp.getY() - 5,
+					c.addFriendly(new Attack(mp.getX() + 16, mp.getY() - 5,
 							'r', this, c, s, combo));
-					c.addFriendly(new Bullet(mp.getX() - 16, mp.getY() - 5,
+					c.addFriendly(new Attack(mp.getX() - 16, mp.getY() - 5,
 							'l', this, c, s, combo));
                                         if (combo > 4) {
                                             combo = 0;
                                         }
 				}
 				if (!mp.isPowerup()) {
-					c.addFriendly(new Bullet(mp.getX() + 16, mp.getY() - 5,
+					c.addFriendly(new Attack(mp.getX() + 16, mp.getY() - 5,
 							's', this, c, s, combo));
                                         if (combo > 4) {
                                             combo = 0;
@@ -539,11 +532,11 @@ public class Game extends Canvas implements Runnable {
 		this.enemy_killed = enemy_killed;
 	}
 
-	public MyPlane getPlane() {
+	public MyNinja getNinja() {
 		return this.mp;
 	}
 
-	public MyPlane getPlane2() {
+	public MyNinja getNinja2() {
 		return this.mp2;
 	}
 

@@ -8,16 +8,16 @@ public class Sprites {
 
 	// IMAGES
 
-	private static BufferedImage myplane = null;
-	private static BufferedImage bullet = null;
-	private static BufferedImage bulletL = null;
-	private static BufferedImage bulletR = null;
+	private static BufferedImage myninja = null;
+	private static BufferedImage attack = null;
+	private static BufferedImage attackL = null;
+	private static BufferedImage attackR = null;
 	private static BufferedImage background = null;
-	private static BufferedImage island1 = null;
-	private static BufferedImage island2 = null;
-	private static BufferedImage island3 = null;
+	private static BufferedImage weather1 = null;
+	private static BufferedImage weather2 = null;
+	private static BufferedImage weather3 = null;
 	private static BufferedImage bottom = null;
-	private static BufferedImage enemyBullet = null;
+	private static BufferedImage enemyAttack = null;
 	private static BufferedImage powerup = null;
 	private static BufferedImage boss = null;
 	
@@ -49,17 +49,17 @@ public class Sprites {
 
 			boss = loader.loadImage("/resources/boss.png");
 			powerup = loader.loadImage("/resources/powerup.png");
-			// myplane = loader.loadImage("/resources/player.png");
+			// myninja = loader.loadImage("/resources/player.png");
 			swings[0] = loader.loadImage("/resources/swingRight.png");
 			swings[1] = loader.loadImage("/resources/swingLeft.png");
-			bulletR = loader.loadImage("/resources/bulletRight.png");
+			attackR = loader.loadImage("/resources/bulletRight.png");
 			background = loader.loadImage("/resources/water.png");
 			// islands
-			island1 = loader.loadImage("/resources/island1.png");
-			island2 = loader.loadImage("/resources/island2.png");
-			island3 = loader.loadImage("/resources/island3.png");
+			weather1 = loader.loadImage("/resources/island1.png");
+			weather2 = loader.loadImage("/resources/island2.png");
+			weather3 = loader.loadImage("/resources/island3.png");
 			bottom = loader.loadImage("/resources/bottom.png");
-			enemyBullet = loader.loadImage("/resources/enemybullet1.png");
+			enemyAttack = loader.loadImage("/resources/enemybullet1.png");
 			// Enemy Bullet
 			eBullet[0] = loader.loadImage("/resources/enemybullet1.png");
 			eBullet[1] = loader.loadImage("/resources/enemybullet2.png");
@@ -116,14 +116,14 @@ public class Sprites {
 		return powerup;
 	}
 
-	public BufferedImage getMyPlane() {
-		return myplane;
+	public BufferedImage getMyNinja() {
+		return myninja;
 	}
 
 	/****************************************************************************************************
 	 * I have erased and repalce the swings so that return swing image.
 	 */
-	public BufferedImage[] getBulletSprite() {
+	public BufferedImage[] getAttackSprite() {
 
 		return swings; // return all ninja attacks left and right!
 	}
@@ -144,16 +144,16 @@ public class Sprites {
 		}
 	}
 
-	public BufferedImage getIslandSprite1() {
-		return island1;
+	public BufferedImage getWeatherSprite1() {
+		return weather1;
 	}
 
-	public BufferedImage getIslandSprite2() {
-		return island2;
+	public BufferedImage getWeatherSprite2() {
+		return weather2;
 	}
 
-	public BufferedImage getIslandSprite3() {
-		return island3;
+	public BufferedImage getWeatherSprite3() {
+		return weather3;
 	}
 
 	public BufferedImage getBottomSprite() {
@@ -164,15 +164,15 @@ public class Sprites {
 		return background;
 	}
 
-	public BufferedImage getEBullet() {
-		return enemyBullet;
+	public BufferedImage getEAttack() {
+		return enemyAttack;
 	}
 
 	public BufferedImage getLife() {
 		return life[0];
 	}
 
-	public BufferedImage[] getEnemyBullet() {
+	public BufferedImage[] getEnemyAttack() {
 		return eBullet;
 	}
 

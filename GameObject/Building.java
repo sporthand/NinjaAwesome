@@ -65,14 +65,14 @@ public class Building extends GameObj {
 
 		// building movement when a player press movement key: Jung Hwan Kim
 
-		if (game.getPlane().getDirection().equals("left")
-				&& game.getPlane().getSpeedX() < 0) {
+		if (game.getNinja().getDirection().equals("left")
+				&& game.getNinja().getSpeedX() < 0) {
 			xLoc += speed;
 			if (xLoc > 800)
 				c.removeBuilding(this);
 			// c.addBuilding(this);
-		} else if (game.getPlane().getDirection().equals("right")
-				&& game.getPlane().getSpeedX() > 0) {
+		} else if (game.getNinja().getDirection().equals("right")
+				&& game.getNinja().getSpeedX() > 0) {
 			xLoc -= speed;
 			if (xLoc < -800)
 				c.removeBuilding(this);

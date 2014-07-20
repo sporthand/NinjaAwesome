@@ -12,7 +12,8 @@ import main.Game;
 import main.Physics;
 import main.Sound;
 import main.Sprites;
-import GameObject.MyPlane;
+import GameObject.MyNinja;
+
 
 public class Enemy extends GameObj implements Hostile {
 
@@ -54,12 +55,12 @@ public class Enemy extends GameObj implements Hostile {
 				setTimer(0);
 				// 1P
 				if (game.getState() == game.getState().GAME) {
-					game.getPlane().setScore(game.getPlane().getScore() + 5);
+					game.getNinja().setScore(game.getNinja().getScore() + 5);
 				}
 				// 2P
 				if (game.getState() == game.getState().MULTI) {
-					game.getPlane().setScore(game.getPlane().getScore() + 5);
-					game.getPlane2().setScore(game.getPlane2().getScore() + 5);
+					game.getNinja().setScore(game.getNinja().getScore() + 5);
+					game.getNinja2().setScore(game.getNinja2().getScore() + 5);
 				}
 				// INCREMENT KILL COUNTS
 				game.setEnemy_killed(game.getEnemy_killed() + 1);
@@ -73,13 +74,13 @@ public class Enemy extends GameObj implements Hostile {
 						// --> isDead to test the player
 			// MOVEMENT
 			if (ticks % 20 >= 8) {
-				if (game.getPlane().getX() < this.getX())
-					xLoc -= (speed+ game.getPlane().getSpeedX());
-				if (game.getPlane().getX() > this.getX())
-					xLoc += (speed+ game.getPlane().getSpeedX());
-				if (game.getPlane().getY() < this.getY())
+				if (game.getNinja().getX() < this.getX())
+					xLoc -= (speed+ game.getNinja().getSpeedX());
+				if (game.getNinja().getX() > this.getX())
+					xLoc += (speed+ game.getNinja().getSpeedX());
+				if (game.getNinja().getY() < this.getY())
 					yLoc -= speed;
-				if (game.getPlane().getY() > this.getY())
+				if (game.getNinja().getY() > this.getY())
 					yLoc += speed;
 			}
 			// BOUNDS
@@ -103,22 +104,22 @@ public class Enemy extends GameObj implements Hostile {
 			}
 
 			for (int i = 0; i < game.fl.size(); i++) {
-				Bullet tempFriend = (Bullet) game.fl.get(i);
+				Attack tempFriend = (Attack) game.fl.get(i);
 				// COLLISION WITH BULLETS
 				if (Physics.collision(this, tempFriend)) {
 					c.removeFriendly(tempFriend);
 					tempFriend.setHit(true);
 					// 1P
 					if (game.getState() == game.getState().GAME) {
-						game.getPlane().setScore(
-								game.getPlane().getScore() + 15);
+						game.getNinja().setScore(
+								game.getNinja().getScore() + 15);
 					}
 					// 2P
 					if (game.getState() == game.getState().MULTI) {
-						game.getPlane().setScore(
-								game.getPlane().getScore() + 15);
-						game.getPlane2().setScore(
-								game.getPlane2().getScore() + 15);
+						game.getNinja().setScore(
+								game.getNinja().getScore() + 15);
+						game.getNinja2().setScore(
+								game.getNinja2().getScore() + 15);
 					}
 					this.setIsDead(true);
 					boom.play(false);

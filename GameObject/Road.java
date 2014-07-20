@@ -44,14 +44,14 @@ public class Road extends GameObj {
 
 	public void update() {
 
-		if (game.getPlane().getDirection().equals("left")
-				&& game.getPlane().getSpeedX() < 0) {
+		if (game.getNinja().getDirection().equals("left")
+				&& game.getNinja().getSpeedX() < 0) {
 			xLoc += speed;
 			if (xLoc > 1057)
 				c.removeRoad(this);
 			// c.addBuilding(this);
-		} else if (game.getPlane().getDirection().equals("right")
-				&& game.getPlane().getSpeedX() > 0) {
+		} else if (game.getNinja().getDirection().equals("right")
+				&& game.getNinja().getSpeedX() > 0) {
 			xLoc -= speed;
 			if (xLoc < -1057)
 				c.removeRoad(this);

@@ -1,5 +1,6 @@
 package main;
 
+
 import java.awt.Graphics;
 import java.io.IOException;
 import java.util.LinkedList;
@@ -9,7 +10,7 @@ import classes.*;
 import GameObject.*;
 
 public class Controller {
-	private LinkedList<Island> il = new LinkedList<Island>();
+	private LinkedList<Weather> il = new LinkedList<Weather>();
 	private LinkedList<Building> bl = new LinkedList<Building>(); // I added for
 																	// building
 																	// from Jung
@@ -26,7 +27,7 @@ public class Controller {
 	Hostile h;
 	Neutral n;
 	Random r = new Random();
-	Island TempIsland;
+	Weather TempIsland;
 	Building b; // defined from Jung Hwan Kim's Implementation
 	Road rd;
 
@@ -37,7 +38,7 @@ public class Controller {
 		this.game = game;
 		this.s = s;
 		for (int x = 1; x <= 3; x++) {
-			addIsland(new Island(r.nextInt(640), -r.nextInt(300), x, r, game, s));
+			addIsland(new Weather(r.nextInt(640), -r.nextInt(300), x, r, game, s));
 		}
 	}
 
@@ -134,7 +135,7 @@ public class Controller {
 		this.hl.remove(h);
 	}
 
-	public void addIsland(Island i) {
+	public void addIsland(Weather i) {
 		this.il.add(i);
 	}
 
@@ -175,11 +176,11 @@ public class Controller {
 	public void spawnBuilding(int building_count) {
 
 		if (bl.size() < 2) {
-			if(this.game.getPlane().getDirection().equals("left"))
+			if(this.game.getNinja().getDirection().equals("left"))
 				addBuilding(new Building((-1) * 800, -100, this.game, this, s));
-			if  (!this.game.getPlane().getDirection().equals("left")|| !this.game.getPlane().getDirection().equals("right"))
+			if  (!this.game.getNinja().getDirection().equals("left")|| !this.game.getNinja().getDirection().equals("right"))
 				addBuilding(new Building(0 * 800, -100, this.game, this, s));
-			if  (this.game.getPlane().getDirection().equals("right"))
+			if  (this.game.getNinja().getDirection().equals("right"))
 				addBuilding(new Building(1 * 800, -100, this.game, this, s));
 		}
 	}
@@ -187,11 +188,11 @@ public class Controller {
 	public void spawnRoad(int road_count) {
 
 		if (rl.size() < 2) {
-			if  (this.game.getPlane().getDirection().equals("left"))
+			if  (this.game.getNinja().getDirection().equals("left"))
 				addRoad(new Road((-1) * 1057, 450, this.game, this, s));
-			if  (!this.game.getPlane().getDirection().equals("left")|| !this.game.getPlane().getDirection().equals("right"))
+			if  (!this.game.getNinja().getDirection().equals("left")|| !this.game.getNinja().getDirection().equals("right"))
 				addRoad(new Road((0) * 1057, 450, this.game, this, s));
-			if  (this.game.getPlane().getDirection().equals("right"))
+			if  (this.game.getNinja().getDirection().equals("right"))
 				addRoad(new Road((1) * 1057, 450, this.game, this, s));
 		}
 	}
@@ -199,6 +200,7 @@ public class Controller {
 	public void addBoss() {
 		addHostile(new Boss(450, 10, this.game, this, s));
 	}
+
 
 	public void addNeutral(Neutral n) {
 		this.nl.add(n);
@@ -230,3 +232,4 @@ public class Controller {
 	}
 
 }
+

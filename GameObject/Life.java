@@ -30,19 +30,19 @@ public class Life extends GameObj implements Neutral {
 	public void update() {
 		yLoc += speed;
 		if (game.State == game.State.GAME) {
-			if (Physics.collision(this, game.getPlane())) {
-				game.getPlane().setLives(game.getPlane().getLives() + 1);
+			if (Physics.collision(this, game.getNinja())) {
+				game.getNinja().setLives(game.getNinja().getLives() + 1);
 				c.removeNeutral(this);
 			}
 
 		} else if (game.State == game.State.MULTI) {
-			if (Physics.collision(this, game.getPlane())) {
-				game.getPlane().setLives(game.getPlane().getLives() + 1);
+			if (Physics.collision(this, game.getNinja())) {
+				game.getNinja().setLives(game.getNinja().getLives() + 1);
 				c.removeNeutral(this);
 			}
 
-			if (Physics.collision(this, game.getPlane2())) {
-				game.getPlane2().setLives(game.getPlane2().getLives() + 1);
+			if (Physics.collision(this, game.getNinja2())) {
+				game.getNinja2().setLives(game.getNinja2().getLives() + 1);
 				c.removeNeutral(this);
 			}
 		}
@@ -66,3 +66,4 @@ public class Life extends GameObj implements Neutral {
 	}
 
 }
+
