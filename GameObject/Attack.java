@@ -20,8 +20,8 @@ public class Attack extends GameObj implements Friendly {
         private int swingTimer;
 	private boolean hit = false;
 
-	private BufferedImage[] swings;
-	
+	private BufferedImage[] rightSwings;
+	private BufferedImage[] leftSwings;
 	
 	BufferedImage image;
 	BufferedImage[] e;
@@ -43,10 +43,13 @@ public class Attack extends GameObj implements Friendly {
 		this.swingTimer = 0;
                 this.combo = combo;
                 
-		swings = this.s.getAttackSprite();
-		currentAttack= new Animation(5,swings[0],250,250, 4, combo);
+		rightSwings = this.s.getAttackSprite();
+		currentAttack= new Animation(5,rightSwings[0],250,250, 4, combo);
 		e = s.getExplosion();
 		
+		leftSwings =this.s.getAttackSprite();
+		currentAttack = new Animation (5,leftSwings[1],250,250,4, combo);
+		e=s.getExplosion();
 		
 		explosion = new Animation(5, image, 32, 32, 1);
 		boom = new Sound("/resources/snd_explosion1.wav");
@@ -89,12 +92,21 @@ public class Attack extends GameObj implements Friendly {
 
 	public void draw(Graphics g) {
 		if(!hit){
-			currentAttack.setImage(swings[0]);
-			currentAttack.runAnimation();
-			currentAttack.drawAnimation(g, (int) xLoc, (int) yLoc);
+			if (game.getNinja().getDirection().equals("right")){
+				currentAttack.setImage(rightSwings[0]);
+				currentAttack.runAnimation();
+				currentAttack.drawAnimation(g, (int) xLoc, (int) yLoc);
+			}
+			else if (game.getNinja().getDirection().equals("left")) {
+				currentAttack.setImage(leftSwings[1]);
+				currentAttack.runAnimation();
+				currentAttack.drawAnimation(g, (int)xLoc, (int) yLoc);
+				
+			}
 		}else if(hit){
 			explosion.drawAnimation(g, xLoc, yLoc);
 		}
+		
 	}
 
 	public Rectangle getBounds() {

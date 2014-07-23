@@ -191,7 +191,7 @@ public class Game extends Canvas implements Runnable {
 						c.spawnEnemy(enemy_count);
 					}
 				}
-				if (totalKilled == 30 && bossSpawn) {
+				if (totalKilled == 2 && bossSpawn) {
 					bossSpawn = false;
 					System.out.println("BOSS HAS SPAWNED!");
 					c.addBoss(); // boss spawned at this source code!
