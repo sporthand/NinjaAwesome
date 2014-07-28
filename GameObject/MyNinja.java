@@ -107,13 +107,13 @@ public class MyNinja extends GameObj implements Friendly {
 			for (int i = 0; i < game.hl.size(); i++) {
 				Hostile tempH = game.hl.get(i);
 
-				if (Physics.collision(this, tempH)) {
+				/*if (Physics.collision(this, tempH)) {
 					if (!tempH.getIsDead()) {
 						boom.play(false);
 						setHEALTH(getHEALTH() - 25);
 					}
-					tempH.setIsDead(true);
-				}
+					tempH.setIsDead(false);
+				}*/
 			}
 			
 			//POWER UPS

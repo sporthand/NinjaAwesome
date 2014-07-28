@@ -12,12 +12,11 @@ import main.Sprites;
 
 public class Road extends GameObj {
 	private BufferedImage[] road;
-	private int speed = 5;// I changed for jump down speed
+	
 
 	private int ticks = 0;
 	private int timer = 0;
-	private int levelOfStage = 0; // Boss suppose to be changed depend on each
-									// level.
+	private int Stage = 0; // the building shall be spawn depending on the number stage. 
 
 	// added for new data field for boss.
 	private int imageNumber = 1;
@@ -44,18 +43,24 @@ public class Road extends GameObj {
 
 	public void update() {
 
-		if (game.getNinja().getDirection().equals("left")
-				&& game.getNinja().getSpeedX() < 0) {
-			xLoc += speed;
-			if (xLoc > 1057)
-				c.removeRoad(this);
-			// c.addBuilding(this);
+		if (game.getNinja().getDirection().equals("left")){
+			xLoc -= game.getNinja().getSpeedX();
+			if (xLoc > 0 ){
+				
+				if (c.getRoad().size()<2)
+					c.spawnRoad(-1);
+				else if(xLoc>1051)
+					c.removeRoad(this);
+			}
 		} else if (game.getNinja().getDirection().equals("right")
 				&& game.getNinja().getSpeedX() > 0) {
-			xLoc -= speed;
-			if (xLoc < -1057)
-				c.removeRoad(this);
-			// c.addBuilding(this);
+			xLoc -=  game.getNinja().getSpeedX();
+			if (xLoc<0){
+				if (c.getRoad().size()<2)
+					c.spawnRoad(1);
+				else if(xLoc<-1051)
+					c.removeRoad(this);
+			}
 		}
 
 	}

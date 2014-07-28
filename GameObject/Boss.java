@@ -16,14 +16,14 @@ import main.Sprites;
 
 public class Boss extends GameObj implements Hostile {
 
-	private int HEALTH = 900;
+	private int HEALTH = 3300;
 	private boolean isDead = false;
 	private BufferedImage image;
 	private BufferedImage[] e;
 	private int bulletSpeed = 11;
 	private int speed = 11;// I changed for jump down speed
-	//private int xSpeed = 2;
-	private int bossAction =0;
+	// private int xSpeed = 2;
+	private int bossAction = 0;
 	private int attackSpeed = 0; // Jung added the more datafield
 	private int ticks = 0;
 	private int timer = 0;
@@ -36,8 +36,9 @@ public class Boss extends GameObj implements Hostile {
 	private double imageWidth = 0.0;
 	private double imageHeight = 0.0;
 
-	private String direction = "down"; // I make a boss to move aroud easier!
-										// New Source Code Attention!
+	private String direction = "jumpdown"; // I make a boss to move aroud
+											// easier!
+											// New Source Code Attention!
 	Animation explosion, anim;
 	Random r = new Random();
 	Sound boom;
@@ -78,79 +79,75 @@ public class Boss extends GameObj implements Hostile {
 			}
 			timer++;
 		}
-		/* The boss movement is here and action!
-		 *  ****************************************************************************************************************/
-		
+		/*
+		 * The boss movement is here and action!
+		 * ********************************
+		 * **************************************
+		 * *****************************************
+		 */
+
 		if (!isDead) {
-			
-			if (ticks %60 == 0)
-				bossAction = r.nextInt(2);
-			
-			if (!isJumpDown){
+			int whenAttack = r.nextInt(61)+100;
+			if (isJumpDown)
+				if (ticks % whenAttack == 0){
+					this.setDirection("left");
+					this.setSpeed(0);
+				}
+			if (direction.equals("jumpdown")) {
 				yLoc += speed;// y
 				if (yLoc >= 450) {
 					isJumpDown = true;
 					this.setDirection("up");
+					isJumpDown = true;
+
+				}
+			}else if (direction.equals("up")) {
+				this.setSpeed(-3);
+				if (yLoc <= 50)
+					this.setDirection("down");
+
+			}else if (direction.equals("down")) {
+				// System.out.println("Boss " + direction + "\n"); // for degug
+				// purpose;
+				this.setSpeed(3);
+				if (yLoc >= 450) {// x
+					this.setDirection("up");
 					
 				}
+			}else if (direction.equals("left")) {
+				this.setAttackSpeed(-10);
+				if (xLoc <= 10){
+					this.setDirection("right");
+					this.setAttackSpeed(0);
+				}
+			}else if (direction.equals("right")) {
+				this.setAttackSpeed(10);
+				if (xLoc >= 450) {
+					this.setDirection("up");
+					this.setAttackSpeed(0);
+					bossAction = 0;
+				}
+
 			}
-			else if (bossAction == 0){
-				if (direction.equals("up")) {
-					this.setSpeed(-1);
-					if (yLoc <=50)
-						this.setDirection("down");
-	
-				} else if (direction.equals("down")) {
-					//System.out.println("Boss " + direction + "\n"); // for degug purpose;
-					this.setSpeed(1);
-					
-					if (yLoc >= 200) {// x
-						this.setDirection("up");
-					}
-	
-				}
-				
-			}else if (bossAction == 1){
-				if (!(direction.equals("right")))
-					this.setDirection("left");
-				this.setSpeed(0);
-				if(direction.equals("left")){
-					//System.out.println ("Boss" + direction + "\n");
-					this.setAttackSpeed(-10);
-					if (xLoc <=30)
-						this.setDirection("right");
-					
-				}
-				else if (direction.equals("right")){
-					this.setAttackSpeed(10);
-					if (xLoc>=390){
-						this.setDirection("up");
-						this.setAttackSpeed(0);
-						bossAction =0;
-					}
-						
-					
-				}
-				
-			}
-		/**********************************************************************************************************************/	
+
+			/**********************************************************************************************************************/
 			yLoc += this.getSpeed();
 			xLoc += this.getAttackSpeed();
 			// SHOOTING AI
 			if (ticks % 40 == 0) { // this might be helpful for delay!
 				if (r.nextInt(2) == 1) {
 					c.addHostile(new EnemyAttack(this.xLoc - 40,
-							this.yLoc + 50, this.bulletSpeed + 1, this.game, this.c,
-							this.s));
+							this.yLoc + 50, this.bulletSpeed + 1, this.game,
+							this.c, this.s));
 					c.addHostile(new EnemyAttack(this.xLoc - 20,
-							this.yLoc + 50, this.bulletSpeed + 1, this.game, this.c,
-							this.s));
+							this.yLoc + 50, this.bulletSpeed + 1, this.game,
+							this.c, this.s));
 					c.addHostile(new EnemyAttack(this.xLoc + 20,
-							this.yLoc + 50, this.bulletSpeed + 1, this.game, this.c,
-							this.s));
+							this.yLoc + 50, this.bulletSpeed + 1, this.game,
+							this.c, this.s));
 					c.addHostile(new EnemyAttack(this.xLoc + 40,
-							this.yLoc + 50, this.bulletSpeed + 1, this.game, this.c,
-							this.s));
+							this.yLoc + 50, this.bulletSpeed + 1, this.game,
+							this.c, this.s));
 					if (r.nextInt(3) == 1) {
 						// c.addHostile(new StrongBullet(this.xLoc, this.yLoc,
 						// this.speed + 1, this.game, this.c, this.s));
@@ -174,9 +171,7 @@ public class Boss extends GameObj implements Hostile {
 					}
 
 					// 2P
-					if (game.getState() == game.getState().MULTI) {
-						setHEALTH(this.getHEALTH() - 5);
-					}
+				
 					tempFriend.setHit(true);
 					if (getHEALTH() <= 0) {
 						this.setIsDead(true);
@@ -241,13 +236,14 @@ public class Boss extends GameObj implements Hostile {
 	public void setSpeed(int speed) {
 		this.speed = speed;
 	}
-	public void setAttackSpeed(int attackSpeed){
+
+	public void setAttackSpeed(int attackSpeed) {
 		this.attackSpeed = attackSpeed;
 	}
-	public int getAttackSpeed(){
+
+	public int getAttackSpeed() {
 		return attackSpeed;
 	}
-	
 
 	public int getHEALTH() {
 		return HEALTH;

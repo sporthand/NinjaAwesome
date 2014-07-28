@@ -18,6 +18,7 @@ import GameObject.MyNinja;
 public class Enemy extends GameObj implements Hostile {
 
 	Random r = new Random();
+	private int enemyHealth = 50;
 	private int speed;
 	private BufferedImage[] image;
 	private BufferedImage[] e;
@@ -107,7 +108,7 @@ public class Enemy extends GameObj implements Hostile {
 				Attack tempFriend = (Attack) game.fl.get(i);
 				// COLLISION WITH BULLETS
 				if (Physics.collision(this, tempFriend)) {
-					c.removeFriendly(tempFriend);
+					//c.removeFriendly(tempFriend);
 					tempFriend.setHit(true);
 					// 1P
 					if (game.getState() == game.getState().GAME) {

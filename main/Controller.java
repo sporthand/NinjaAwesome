@@ -1,6 +1,5 @@
 package main;
 
-
 import java.awt.Graphics;
 import java.io.IOException;
 import java.util.LinkedList;
@@ -38,7 +37,8 @@ public class Controller {
 		this.game = game;
 		this.s = s;
 		for (int x = 1; x <= 3; x++) {
-			addIsland(new Weather(r.nextInt(640), -r.nextInt(300), x, r, game, s));
+			addIsland(new Weather(r.nextInt(640), -r.nextInt(300), x, r, game,
+					s));
 		}
 	}
 
@@ -173,34 +173,31 @@ public class Controller {
 	}
 
 	// spawn buildings from Jung Hwan Kim's Implementation
-	public void spawnBuilding(int building_count) {
+	public void spawnBuilding(int direction) {
+		if (direction == 0){ // initial
+			//addBuilding(new Building (-1*800, -100, this.game,this,s)); // spawn left building at initial game
+			addBuilding(new Building(0* 800, -100, this.game,this, s)); // spawn middle building at initial game
+			//addBuilding(new Building(1*800, -100, this.game,this,s)); // spawn right building at initial game		
+		}else
+			addBuilding(new Building (direction*800, -100, this.game,this,s));
+	
 
-		if (bl.size() < 2) {
-			if(this.game.getNinja().getDirection().equals("left"))
-				addBuilding(new Building((-1) * 800, -100, this.game, this, s));
-			if  (!this.game.getNinja().getDirection().equals("left")|| !this.game.getNinja().getDirection().equals("right"))
-				addBuilding(new Building(0 * 800, -100, this.game, this, s));
-			if  (this.game.getNinja().getDirection().equals("right"))
-				addBuilding(new Building(1 * 800, -100, this.game, this, s));
-		}
 	}
 
-	public void spawnRoad(int road_count) {
+	public void spawnRoad(int direction) {
 
-		if (rl.size() < 2) {
-			if  (this.game.getNinja().getDirection().equals("left"))
-				addRoad(new Road((-1) * 1057, 450, this.game, this, s));
-			if  (!this.game.getNinja().getDirection().equals("left")|| !this.game.getNinja().getDirection().equals("right"))
-				addRoad(new Road((0) * 1057, 450, this.game, this, s));
-			if  (this.game.getNinja().getDirection().equals("right"))
-				addRoad(new Road((1) * 1057, 450, this.game, this, s));
-		}
+		if(direction == 0){
+			//addRoad(new Road(-1 * 1057, 450, this.game, this, s)); // spawn left road at initial game
+			addRoad(new Road(0 * 1057, 450, this.game, this, s)); // spawn middle road at initial game
+			//addRoad(new Road(1 * 1057, 450, this.game, this, s)); // spawn right road at initial game
+		}else
+			addRoad(new Road(direction * 1057, 450, this.game, this, s)); // spawn right road at initial game
+			
 	}
 
 	public void addBoss() {
 		addHostile(new Boss(450, 10, this.game, this, s));
 	}
-
 
 	public void addNeutral(Neutral n) {
 		this.nl.add(n);
@@ -232,4 +229,3 @@ public class Controller {
 	}
 
 }
-

@@ -39,8 +39,8 @@ public class Game extends Canvas implements Runnable {
 	private int enemy_count = 2;
 	private int enemy_killed = 0;
 	private int totalKilled = 0;
-	private int building_count = 3;
-	private int road_count = 3;
+	private int building_count = 15;
+	private int road_count = 15;
         private int combo = 0;
 
 	public LinkedList<Friendly> fl;
@@ -98,7 +98,8 @@ public class Game extends Canvas implements Runnable {
 		mp = new MyNinja(WIDTH / 4 + 100, HEIGHT / 4 + 200, this, c, s);
 		mp2 = new MyNinja(WIDTH - 100, 500, this, c, s);
 		c.spawnEnemy(enemy_count);
-		
+		c.spawnBuilding(0);// I added for building from Jung 
+		c.spawnRoad(0);
 		fl = c.getFriendly();
 		hl = c.getHostile();
 		bl = c.getBuilding();
@@ -144,8 +145,7 @@ public class Game extends Canvas implements Runnable {
 
 		// GAME LOOP
 		while (running) {
-			c.spawnBuilding(building_count);// I added for building from Jung 
-			c.spawnRoad(road_count);
+			
 			long now = System.nanoTime();
 			delta += (now - lastTime) / ns;
 			lastTime = now;
@@ -191,7 +191,7 @@ public class Game extends Canvas implements Runnable {
 						c.spawnEnemy(enemy_count);
 					}
 				}
-				if (totalKilled == 2 && bossSpawn) {
+				if (totalKilled == 30 && bossSpawn) {
 					bossSpawn = false;
 					System.out.println("BOSS HAS SPAWNED!");
 					c.addBoss(); // boss spawned at this source code!

@@ -21,7 +21,6 @@ public class Building extends GameObj {
 
 	private int ticks = 0;
 	private int timer = 0;
-	private int levelOfStage = 0;
 
 	private int imageNumber = 1;
 	private double imageWidth = 0;
@@ -65,18 +64,23 @@ public class Building extends GameObj {
 
 		// building movement when a player press movement key: Jung Hwan Kim
 
-		if (game.getNinja().getDirection().equals("left")
-				&& game.getNinja().getSpeedX() < 0) {
-			xLoc += speed;
-			if (xLoc > 800)
-				c.removeBuilding(this);
-			// c.addBuilding(this);
-		} else if (game.getNinja().getDirection().equals("right")
-				&& game.getNinja().getSpeedX() > 0) {
-			xLoc -= speed;
-			if (xLoc < -800)
-				c.removeBuilding(this);
-			// c.addBuilding(this);
+		if (game.getNinja().getDirection().equals("left")) {
+			xLoc -= game.getNinja().getSpeedX();
+			if (xLoc > 0) {
+				if (c.getBuilding().size() < 2)
+					c.spawnBuilding(-1);
+				else if (xLoc > 800)
+					c.removeBuilding(this);
+			}
+		} else if (game.getNinja().getDirection().equals("right")) {
+			xLoc -= game.getNinja().getSpeedX();
+			if (xLoc < 0) {
+				if (c.getBuilding().size() < 2)
+					c.spawnBuilding(1);
+				else if (xLoc <- 800)
+					c.removeBuilding(this);
+			}
+
 		}
 
 	}
